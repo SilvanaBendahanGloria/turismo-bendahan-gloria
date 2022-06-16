@@ -723,70 +723,39 @@ button a:hover {
 
     /*Main Nosotros Mobile*/
     .nosotros__main__grid {
-    display:block;
+        display:block;
     }
 
     .historia {
-        padding: 20px 20px 0 20px;
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
         font-size: 20px;
-        line-height: 35px;
+        line-height: 30px;
     }
 
     .historia h2 {
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 35px;
-        margin-bottom: 30px
+        font-size: 25px;
     }
-
-    .mundito {
-        justify-self: center;
-        align-self:center;
-    }
-
+    
     .servicios {
-        justify-content: center;
-        align-self:center;
-        padding: 0 20px 20px 20px;
-        text-align: center;
-        font-family: 'DM Sans', sans-serif;
         font-size: 20px;
-        line-height: 35px;
+        line-height: 30px;
     }
 
     .servicios h2 {
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 35px;
-        margin-bottom: 30px
+        font-size: 30px;
     }
 
     .equipo {
-        justify-self: end;
-        padding: 20px;
-        text-align: center;
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
     }
 
     .equipo h2 {
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 35px;
-        margin-top: 10px;
-        margin-bottom: 40px;
+        font-size: 30px;
     }
 
     .equipo p {
-        font-family: 'Gentium Plus', serif;
-        font-size: 20px;
-        font-style: italic;
-        margin-bottom: 50px;
+        font-size: 15px;
     }
-
-
-
-
-
 
     /*Main de Contacto Mobile*/
     .formulario {
