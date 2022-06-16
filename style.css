@@ -1,0 +1,823 @@
+/*Borrar márgenes por default*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Borrar viñeta en listas no ordenadas*/
+ul li {
+    list-style-type: none;
+}
+
+/*Borrar subrayado en links*/
+a { 
+    text-decoration: none;
+}
+
+/*Google Fonts:
+font-family: 'DM Sans', sans-serif;
+font-family: 'Gentium Plus', serif;
+font-family: 'Shadows Into Light', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Gentium+Plus&family=Shadows+Into+Light&display=swap');
+
+/*Body*/
+.body {
+    position: relative;
+}
+
+.index__body {
+    min-height: 800px;
+}
+
+/*Header*/
+.fixed { 
+    position: fixed; 
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: black;
+}
+
+.menu__lista a {  
+    font-size: 25px;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+/*Main del Index*/
+.index__main{
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    background-image: url(imagenes/portada-index-1.jpg);
+}
+
+.index__titulo { 
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: 0 ;
+    top: 0;
+    margin: auto;
+    max-width:1000px;
+    height: 50px; 
+    padding-bottom: 100px;
+    font-size: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}  
+
+/*Main Genérico*/
+.generico__main {
+    padding-top: 50px; /*Para que no lo pise el header*/
+    width: 100%;
+    height: 50vh;
+}
+
+.generico__main h1 {
+    font-size: 60px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    margin: 20px;
+    margin-top: 8%;
+}
+
+/*Botones*/
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 8px 12px;
+    border-color: none;
+    border-radius: 60%;
+    border-width: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button a {
+    color: white;
+}
+
+button a:hover {
+    font-size: 25px;
+}
+
+.escribinos {
+    color: black;
+    font-family: 'Shadows Into Light';
+    font-size: 20px;
+}
+
+/*Main Nosotros*/
+#nosotros__portada {
+    background-image: url(imagenes/portada-nosotros-1.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+.nosotros__main__grid {
+ display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.historia {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-self:center;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.historia h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    margin-bottom: 30px
+}
+
+.mundito {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    align-self:center;
+}
+
+.servicios {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: center;
+    align-self:center;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.servicios h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    margin-bottom: 30px
+}
+
+.servicios ul li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.equipo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-self: end;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.equipo h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.equipo p {
+    font-family: 'Gentium Plus', serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+/*Main NOA*/
+#noa__portada {
+    background-image: url(imagenes/portada-noa-1.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+.noa__main__grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1f;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 1vw;
+}
+
+.glamping {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self:flex-start;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 20px 20px 30px 20px;
+    text-align: center;
+    background-color: rgb(235, 94, 43);
+    border-radius: 20%;
+    color: white;
+    align-items: center;
+}
+
+.glamping h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.glamping p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+#noa__boton__especial {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.tucuman {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: center;
+    align-self:center;
+    padding: 20px 20px 30px 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: rgb(235, 94, 43);
+    border-radius: 20%;
+    color: white;
+    align-items: center;
+}
+
+.tucuman h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px
+}
+
+.tucuman p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.noa__aside { 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-right: 10px;
+}
+
+.noa__aside h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Main LITORAL*/
+#litoral__portada {
+    background-image: url(imagenes/portada-litoral-1.JPG);
+    background-position: bottom;
+    width: 100%;
+}
+
+.litoral__main {
+    background-image: url(imagenes/litoral-fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: cover;
+}
+
+.misiones {
+    padding: 10px;
+    width: 50%;
+}
+
+.misiones h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align:left;
+    color: white;
+}
+
+.misiones p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;    
+}
+
+.ibera {
+    width: 50%;
+    margin-left: 50%;
+    padding: 10px;
+}
+
+.ibera h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.ibera p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+}
+
+.palmar {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Shadows Into Light', cursive;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.litoral__aside h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Main CENTRO*/   
+#centro__portada {
+    background-image: url(imagenes/portada-centro-1.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+.centro__main {
+    background-color: black;
+    color: white;
+}
+
+.centro__main .boton {
+    border-color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 1px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+}
+
+#mendoza .escribinos {
+    color: white;
+}
+
+.centro__main__inicio {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+#mendoza {
+    width: 50vw;
+    padding-top: 40px; /*por el header*/
+}
+
+#mendoza h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#mendoza p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#cordoba {
+    width: 50vw;
+    margin-left: 45vw;
+}
+
+#cordoba h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 40px; /*por el header*/
+    text-align: center;
+}
+
+#cordoba p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    align-self: flex-end;
+}
+
+.centro__aside {
+    text-align: center; 
+    padding-top: 20px;
+}
+
+.centro__aside h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Main SUR*/  
+#sur__portada {
+    background-image: url(imagenes/portada-sur-1.jpg);
+    background-position: center;
+    width: 100%;
+}
+
+.sur__main__inicio {
+  background-color: black;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.sur__main__medio {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: 3fr;
+}
+
+.sur__main__left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: 'Gentium Plus', serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 50px 25px;
+}
+
+.sur__main__centro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.sur__main__right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-family: 'Gentium Plus', serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 50px 25px;
+}
+
+.sur__main__pie {
+    background-color: black;
+}
+
+.sur__aside {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Main Contacto*/
+#contacto__portada {
+    background-image: url(imagenes/portada-contacto-1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+}
+
+.formulario {
+    border-style: outset;
+    border-color: black;
+    border-radius: 2%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    margin: 10px 200px;
+    padding: 10px;
+}
+
+.musica {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    background-color: black;
+}
+
+.musica__titulo {
+    font-family: 'Gentium Plus', serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    line-height: 100px;
+}
+
+.musica__logos {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.musica img {
+    border-radius:100%;
+    align-items: center;
+}
+
+.musica iframe {
+    height: 25vh;
+}
+
+/*Configuracion del Footer del Index*/
+.index__footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.index__footer__pie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: center;
+    width: 75%;
+}
+
+.index__footer__pie__datos {
+    font-size: 10px;
+    color: white;
+    font-style: italic;
+    line-height: 15px;
+    align-self: center;
+}
+
+.index__footer__pie__news {
+    font-size: 15px;
+    color: white;
+    margin-left: 25%;
+    align-self: center;
+}
+
+.index__footer__iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-end; 
+}
+
+.index__footer__iconos__lista { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right: 15px;
+    gap: 30px; 
+    position: fixed;
+    bottom: 0;
+}
+
+/*Configuracion del Footer Genérico, que no fija todo sino solo los iconos de contacto*/
+.generico__footer {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.generico__footer__pie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: center;
+    width: 75%;
+}
+
+.generico__footer__pie__datos {
+    font-size: 10px;
+    color: white;
+    font-style: italic;
+    line-height: 15px;
+    align-self: center;
+}
+
+.generico__footer__pie__news {
+    font-size: 15px;
+    color: white;
+    margin-left: 25%;
+    align-self: center;
+}
+
+.generico__footer__iconos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-end; 
+}
+
+.generico__footer__iconos__lista { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items:center;
+    padding-right: 15px;
+    gap: 30px; 
+    position: fixed;
+    bottom: 0;
+}
+
+/*Estilo Mobile para 480px o menos*/
+@media only screen and (max-width: 480px) {
+
+    /*Main de Index Mobile*/
+    .index__main{
+        width: 100%;
+        height:100vh;
+        object-fit: cover;
+        background-image: url(imagenes/portada-index-1.jpg);
+        background-position: center;
+    }
+    
+    .index__titulo {  
+        margin-bottom: 50vh; /*Al sacarle el position:absolute, no debería pasar por debajo del header, en lugar de por arriba??*/
+        margin-left: 50vw;
+        font-size: 80px;
+    }  
+
+    /*Main Genérico Mobile*/
+    .generico__main {
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    /*Main Nosotros Mobile*/
+    .nosotros__main__grid {
+    display:block;
+    }
+
+    .historia {
+        padding: 20px 20px 0 20px;
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .historia h2 {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 35px;
+        margin-bottom: 30px
+    }
+
+    .mundito {
+        justify-self: center;
+        align-self:center;
+    }
+
+    .servicios {
+        justify-content: center;
+        align-self:center;
+        padding: 0 20px 20px 20px;
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .servicios h2 {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 35px;
+        margin-bottom: 30px
+    }
+
+    .equipo {
+        justify-self: end;
+        padding: 20px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .equipo h2 {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .equipo p {
+        font-family: 'Gentium Plus', serif;
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+    /*Main de Contacto Mobile*/
+    .formulario {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .musica__titulo {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .musica img {
+        display: none;
+    }
+
+    /*Footer del Index en Mobile*/
+    .index__footer {
+        height: 25vh;
+    }
+
+    .index__footer__pie__news {
+        margin-left: 0;
+    }
+
+    /*Footer Genérico Mobile*/
+    .generico__footer {
+        height: 25vh;
+    }
+
+    .generico__footer__pie__news {  
+        margin-left: 0;
+    }
+}
