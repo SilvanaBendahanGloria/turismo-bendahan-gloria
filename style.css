@@ -700,6 +700,12 @@ button a:hover {
 /*Estilo Mobile para 480px o menos*/
 @media only screen and (max-width: 480px) {
 
+    /*Header*/
+    .menu__lista a {  
+        font-size: 20px;
+        width: 100%;
+    }
+
     /*Main de Index Mobile*/
     .index__main{
         width: 100%;
@@ -711,18 +717,13 @@ button a:hover {
     
     .index__titulo {  
         margin-bottom: 50vh; /*Al sacarle el position:absolute, no debería pasar por debajo del header, en lugar de por arriba??*/
-        margin-left: 50vw;
+        margin-left: 40vw;
         font-size: 80px;
     }  
 
     /*Main Genérico Mobile*/
     .generico__main {
         padding-top: 100px;
-        width: 100%;
-    }
-
-    .menu__lista a {  
-        font-size: 20px;
         width: 100%;
     }
 
@@ -872,13 +873,49 @@ button a:hover {
         font-size: 20px;
     }
 
+    /*Main SUR para Mobile*/  
+    #sur__portada {
+        background-image: url(imagenes/portada-sur-1.jpg);
+        background-position: center;
+        width: 100%;
+    }
 
+    #sur__portada h1 {
+        text-shadow: 0 0  10px black; 
+    }
 
+    .sur__main__inicio {
+        font-size: 15px;
+    }
 
+    .sur__main__inicio__img__mobile {
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+    }
 
+    .sur__main__medio {
+        display: block;
+    }
 
+    .sur__main__centro__img__mobile {
+        width: 100%;
+        object-fit: cover;
+    }
 
+    .sur__main__pie__img__mobile {
+        width: 30%;
+        height: 30%;
+        object-fit: cover;
+    }
 
+    .sur__aside {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     /*Main de Contacto Mobile*/
     .formulario {
