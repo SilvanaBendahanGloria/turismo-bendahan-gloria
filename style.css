@@ -778,7 +778,7 @@ button a:hover {
     .tucuman {
         border-radius: 10%;
     }
-    
+
     .tucuman h2 {
         font-size: 25px;
     }
@@ -832,6 +832,45 @@ button a:hover {
         font-size: 20px;
     }
 
+    /*Main CENTRO para Mobile*/  
+    .centro__main__inicio {
+        font-size: 25px;
+    }
+
+    .mendoza__mobile {
+        width: 40vw;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    .cordoba__mobile {
+        width: 40vw;
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    #mendoza {
+        width: 100vw;
+        padding-top: 70px; /*por el header*/
+    }
+
+    #mendoza h2 {
+        font-size: 25px;
+    }
+
+    #cordoba {
+        width: 100vw;
+        margin-left: 0vw;
+    }
+
+    #cordoba h2 {
+        font-size: 25px;
+        padding-top: 90px; /*por el header*/
+    }
+
+    .centro__aside h3 {
+        font-size: 20px;
+    }
 
 
 
