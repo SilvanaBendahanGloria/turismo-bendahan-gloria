@@ -721,6 +721,10 @@ button a:hover {
         width: 100%;
     }
 
+    .menu__lista a {  
+        font-size: 20px;
+    }
+
     /*Main Nosotros Mobile*/
     .nosotros__main__grid {
         display:block;
@@ -755,6 +759,23 @@ button a:hover {
 
     .equipo p {
         font-size: 15px;
+    }
+
+    /*NOA Main Mobile*/
+    .noa__main__grid {
+        display: block;
+    }
+    
+    .glamping h2 {
+        font-size: 25px;
+    }
+    
+    .tucuman h2 {
+        font-size: 25px;
+    }
+    
+    .noa__aside h3 {
+        font-size: 20px;
     }
 
     /*Main de Contacto Mobile*/
