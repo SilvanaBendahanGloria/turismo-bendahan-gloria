@@ -723,6 +723,7 @@ button a:hover {
 
     .menu__lista a {  
         font-size: 20px;
+        width: 100%;
     }
 
     /*Main Nosotros Mobile*/
@@ -766,8 +767,16 @@ button a:hover {
         display: block;
     }
     
+    .glamping {
+        border-radius: 10%;
+    }
+
     .glamping h2 {
         font-size: 25px;
+    }
+    
+    .tucuman {
+        border-radius: 10%;
     }
     
     .tucuman h2 {
@@ -777,6 +786,60 @@ button a:hover {
     .noa__aside h3 {
         font-size: 20px;
     }
+
+    /*Main LITORAL Mobile*/
+    .litoral__main {
+        background-color: rgb(13, 73, 13);
+        background-image: none;
+    }
+
+    .misiones {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .misiones h2 {
+        font-size: 25px;
+    }
+
+    .misiones p {
+        line-height: 25px;
+        text-align: justify;   
+    }
+
+    .ibera {
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .ibera h2 {
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .ibera p {
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .palmar {
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+    .litoral__aside h3 {
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
 
     /*Main de Contacto Mobile*/
     .formulario {
