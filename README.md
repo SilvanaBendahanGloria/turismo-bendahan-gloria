@@ -3,11 +3,11 @@ Desafío de Coderhouse
 <h1 align="center">Hi 👋, I'm Silvana Bendahan Gloria</h1>
 <h3 align="center">A fresh starter frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on a challenge for Coderhouse **https://www.coderhouse.com/**
+- 🔭 I’m currently working on a challenge for Coderhouse
 
 - 🌱 I’m currently learning **HTML, CSS & GITHUB**
 
-- 📄 I´m Master in Tourism Developement [http://www.unq.edu.ar/](http://www.unq.edu.ar/)
+- 📄 I´m Master in Tourism Developement
 
 - 💬 Ask me about tourism & gluten free food :)
 
