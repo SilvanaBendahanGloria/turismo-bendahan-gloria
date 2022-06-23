@@ -198,7 +198,7 @@ font-family: 'Shadows Into Light', cursive;*/
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
+    ;
 }
 
 /*Alineacion de imágenes en sentido vertical*/
@@ -206,8 +206,8 @@ font-family: 'Shadows Into Light', cursive;*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
+    justify-content: space-evenly;  
+    align-items: center; 
 }
 
 /*Botones*/
@@ -662,7 +662,7 @@ button a:hover {
     width: 100%;
 }
 
-.sur__main__inicio {
+.sur__main__inicio { /* Algo raro pasa entre entre sur__main__inicio y tres__imagenes......*/
   background-color: black;
   color: white;
   font-family: 'Shadows Into Light', cursive;
@@ -708,10 +708,13 @@ button a:hover {
     padding: 50px 25px;
 }
 
-.sur__main__pie {
+.sur__main__pie { /* Algo raro pasa entre entre sur__main__pie y tres__imagenes......*/
     background-color: black;
     text-align: center;
     justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .sur__aside {
@@ -872,6 +875,10 @@ button a:hover {
     bottom: 0;
 }
 
+.footer__iconos__redes {
+    border-radius: 50%;
+}
+
 /*Estilo Mobile para 480px o menos*/
 @media only screen and (max-width: 480px) {
 
@@ -900,6 +907,11 @@ button a:hover {
     .generico__main {
         padding-top: 100px;
         width: 100%;
+    }
+
+    .imagenes__aside__mobile {
+        width: 90vw;
+        height: auto;
     }
 
     /*Main Nosotros Mobile*/
@@ -961,11 +973,6 @@ button a:hover {
     
     .noa__aside h3 {
         font-size: 20px;
-    }
-
-    .noa__mobile {
-        width: 90vw;
-        height: auto;
     }
 
     /*Main LITORAL Mobile*/
@@ -1116,6 +1123,11 @@ button a:hover {
     
     .musica img {
         display: none;
+    }
+
+    .musica__logos iframe {
+        width: 80%;
+
     }
 
     /*Footer del Index en Mobile*/
