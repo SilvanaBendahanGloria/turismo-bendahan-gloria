@@ -52,10 +52,6 @@ font-family: 'Shadows Into Light', cursive;*/
     font-family: 'Shadows Into Light', cursive;
 }
 
-.menu__lista a:active {
-    background-color: gray;
-}
-
 /*Main del Index*/
 .index__main{
     width: 100%;
@@ -82,7 +78,7 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 .index__main {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -205,6 +201,15 @@ font-family: 'Shadows Into Light', cursive;*/
     align-items: center;
 }
 
+/*Alineacion de imágenes en sentido vertical*/
+.imagenes__verticales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
 /*Botones*/
 .boton {
     display: flex;
@@ -311,6 +316,7 @@ button a:hover {
     grid-row-start: 1;
     grid-row-end: 4;
     justify-self: end;
+    align-self: center;
     padding: 20px;
     text-align: center;
     background-color: black;
@@ -414,7 +420,6 @@ button a:hover {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
-    margin-right: 10px;
 }
 
 .noa__aside h3 {
@@ -933,7 +938,7 @@ button a:hover {
         font-size: 15px;
     }
 
-    /*NOA Main Mobile*/
+    /*Main NOA Mobile*/
     .noa__main__grid {
         display: block;
     }
@@ -956,6 +961,11 @@ button a:hover {
     
     .noa__aside h3 {
         font-size: 20px;
+    }
+
+    .noa__mobile {
+        width: 90vw;
+        height: auto;
     }
 
     /*Main LITORAL Mobile*/
