@@ -6,47 +6,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    
     <meta name="author" content="Silvana Bendahan Gloria">
     <meta name="description" content="Página de turismo receptivo de Argentina creada para el Desafio 1 de Coderhouse">
-    
+
     <!--Link a CSS-->
     <link rel="stylesheet" href="style.css">
-    
+
+   <!--Link a Bootstrap--> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+   <!--Link para Navbar-->
+   <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!--Favicon, iconito en la pestaña-->
     <link rel="shortcut icon" href="imagenes/favicon.svg" type="image/x-icon">
-        
-    <title>Región Sur</title>
     
+    <title>Organización de Viajes</title>
+
 </head>
 
-<body>
-    <header id="inicio">              
-        <nav>  <!--barra navegación a las otras páginas internas-->                                
-            <ul class="fixed">
-                <li class="menu__lista"><!--ir a index-->
-                    <a href="index.html">Inicio</a>
-                </li> 
-                <li class="menu__lista"><!--ir a Quienes Somos-->
-                    <a href="nosotros.html">Quienes Somos</a> 
-                </li> 
-                <li class="menu__lista"><!--ir a noa-->
-                    <a href="noa.html">Región NOA</a>
-                </li> 
-                <li class="menu__lista"><!--ir a litoral-->
-                    <a href="litoral.html">Región Litoral</a>
-                </li> 
-                <li class="menu__lista"><!--ir a centro-->
-                    <a href="centro.html">Región Centro</a>
-                </li> 
-                <li class="menu__lista"><!--ir a sur-->
-                    <a href="#inicio">Región Sur</a>
-                </li> 
-                <li class="menu__lista"><!--ir a contacto-->
-                    <a href="contacto.html">Contacto</a>
-                </li> 
-            </ul>
-        </nav>
+<body class="index__body">
+
+    <header>
+        <!--Navbar insertado de Freefrontend-->
+        <header class="main-header">
+            <div class="container">
+              <nav class="navbar navbar-expand-lg main-nav px-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar icon-bar-1"></span>
+                    <span class="icon-bar icon-bar-2"></span>
+                    <span class="icon-bar icon-bar-3"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                  <ul class="navbar-nav ml-auto text-uppercase f1">
+                    <li>
+                      <a href="index.html" class="active active-first">Inicio</a>
+                    </li>
+                    <li>
+                      <a href="nosotros.html">Quienes Somos</a>
+                    </li>
+                    <li>
+                      <a href="noa.html">Región Norte</a>
+                    </li>
+                    <li>
+                      <a href="litoral.html">Región Litoral</a>
+                    </li>
+                    <li>
+                      <a href="centro.html">Región Centro</a>
+                    </li>
+                    <li>
+                      <a href="#inicio">Región Sur</a>
+                    </li>
+                    <li>
+                      <a href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <!-- /.container -->
     </header>
 
     <main class="sur__main">
