@@ -44,7 +44,7 @@ font-family: 'Shadows Into Light', cursive;*/
     align-items:center;
 }
 
-/*Footer Genérico*/
+/*Footer*/
 .generico__footer {
     background-color: black;
     width: 100%;
@@ -106,7 +106,7 @@ font-family: 'Shadows Into Light', cursive;*/
     font-family: "Playfair Display", serif;
     font-size: 50%;
     overflow-x: hidden;
-  }
+}
   
   .container {
     width: 100vw;
@@ -167,6 +167,10 @@ font-family: 'Shadows Into Light', cursive;*/
     align-items: center;
   }
   
+  .regiones { 
+    margin-left: 120px;
+  }
+
   .menu_overlay a {
     color: #fff;
     text-decoration: none;
@@ -248,11 +252,81 @@ font-family: 'Shadows Into Light', cursive;*/
     z-index: 0;
   }
   
-  @media screen and (max-width: 650px) {
+ 
+/*@medias para el Index - pantalla mobile*/
+@media screen and (max-width: 480px) {
+   .h2-r,
+   .h2-l {
+        font-size: 3rem;
+        margin-left: 0;
+        }
+
+    .menu_overlay ul {
+        margin-left: 0px;
+        text-align: right;
+        justify-content: center;
+        align-items:flex-start;
+        }
+
+    .regiones {
+        margin-left: -10px;
+        line-height: 45px;
+        }
+
+   .generico__footer__pie__news {
+     margin-left: 0%;
+      }
+    
+    .generico__footer__iconos__lista { 
+        gap: 0px; 
+      }
+}
+
+/*@medias para Index - pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .list a {
-      font-size: 2rem;
+      font-size: 2rem; /*importado de la galería*/
     }
-  } /*Fin Index*/ 
+
+   .h2-r {
+        font-size: 4rem;
+        margin-left:-50px;
+   }
+   .h2-l {
+        font-size: 4rem;
+        margin-left: 0;
+        }
+
+    .menu_overlay ul {
+        margin-left: 0px;
+        text-align: right;
+        justify-content: center;
+        align-items:flex-start;
+        }
+
+    .regiones {
+        margin-left: -10px;
+        line-height: 45px;
+        }
+
+   .generico__footer__pie__news {
+     margin-left: 0%;
+      }
+    
+    .generico__footer__iconos__lista { 
+        gap: 0px; 
+      }
+}   
+
+/*@medias Index - pantallas grandes*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .generico__footer__pie__news {
+        margin-left: 0%;
+         }
+}
+/*Fin @medias*/ 
+/*Fin Index*/ 
+
 
 /*Main Nosotros*/
 #nosotros__portada {
@@ -474,6 +548,7 @@ font-family: 'Shadows Into Light', cursive;*/
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 40px;
+    color: white;
 }
 
 .equipo p {
@@ -481,7 +556,62 @@ font-family: 'Shadows Into Light', cursive;*/
     font-size: 20px;
     font-style: italic;
     margin-bottom: 50px;
+    color: white;
 }
+
+/*@medias para Nosotros - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+    .nosotros__main__grid {
+        display:block;
+    }
+
+    .card__side--front {
+        display: none;
+    }
+
+    .card__heading-span {
+        font-size: 1.5rem;
+    }
+
+    .equipo h2 {
+        font-size: 30px;
+    }
+}
+
+/*@medias Nosotros - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .nosotros__main__grid {
+        display:block;
+    }
+
+    .card__side--front {
+        display: none;
+    }
+}
+
+/*@medias Index - pantallas grandes*/
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .nosotros__main__grid {
+        display:block;
+    }
+
+    .card__side--front {
+        display: none;
+    }
+
+    .card__heading-span {
+        font-size: 1.5rem;
+    }
+
+    .equipo .imagenes__verticales {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+/*Fin @medias*/
+/*Fin Nosotros*/
 
 /*Main Contacto*/
 #contacto__portada {
@@ -523,6 +653,22 @@ font-family: 'Shadows Into Light', cursive;*/
     color: rebeccapurple;
     font-size: 20px;
 }
+/*No @media needed :)*/
+/*Fin Contacto*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -556,33 +702,6 @@ font-family: 'Shadows Into Light', cursive;*/
     flex-wrap: wrap;
     justify-content: center;   
 }
-
-/*Botones*/
-.boton {
-    position: sticky;
-    bottom: 1vh;
-}
-
-.btn a {
-    color: rgb(236, 92, 8);
-}
-.btn a:hover {
-    font-size: larger;
-    text-decoration: none;
-    color: rgb(235, 94, 43);
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*Main NOA*/
 #noa__portada {
@@ -942,54 +1061,6 @@ font-family: 'Shadows Into Light', cursive;*/
 
 /*Estilo Mobile para 480px o menos*/
 @media only screen and (max-width: 480px) {
-
-    /*Main Genérico Mobile*/
-    .generico__main {
-        padding-top: 100px;
-        width: 100%;
-    }
-
-    .imagenes__aside__mobile {
-        width: 90vw;
-        height: auto;
-    }
-
-    /*Main Nosotros Mobile*/
-    .nosotros__main__grid {
-        display:block;
-    }
-
-    .historia {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .historia h2 {
-        font-size: 25px;
-    }
-    
-    .servicios {
-        font-size: 20px;
-        line-height: 30px;
-    }
-
-    .servicios h2 {
-        font-size: 30px;
-    }
-
-    .equipo {
-        background-color: white;
-        color: black;
-    }
-
-    .equipo h2 {
-        font-size: 30px;
-    }
-
-    .equipo p {
-        font-size: 15px;
-    }
-
     /*Main NOA Mobile*/
     .noa__main__grid {
         display: block;
@@ -1130,42 +1201,5 @@ font-family: 'Shadows Into Light', cursive;*/
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-
-    /*Main de Contacto Mobile*/
-    .formulario {
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .musica__titulo {
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .musica img {
-        display: none;
-    }
-
-    .musica__logos iframe {
-        width: 80%;
-    }
-
-    /*Footer del Index en Mobile*/
-    .index__footer {
-        height: 25vh;
-    }
-
-    .index__footer__pie__news {
-        margin-left: 0;
-    }
-
-    /*Footer Genérico Mobile*/
-    .generico__footer {
-        height: 25vh;
-    }
-
-    .generico__footer__pie__news {  
-        margin-left: 0;
     }
 }
