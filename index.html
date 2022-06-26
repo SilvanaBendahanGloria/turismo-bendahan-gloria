@@ -14,6 +14,7 @@
 
     <title>SBG Organización de Viajes</title>
 </head>
+
 <body class="body__index">
     
   <!--Full Menú: Simple Full Screen Menu With CSS, https://codepen.io/kiran-r-raj/pen/gOmvZBB-->
@@ -26,7 +27,13 @@
           <ul>
             <li><a href="#inicio">Home</a></li>
             <li><a href="nosotros.html">Quienes Somos</a></li>
-            <li><a href="regiones.html">Regiones</a></li>
+            <li>Regiones
+              <ul>
+                <li><a href="noa.html">Norte</a></li>
+                <li><a href="litoral.html">Litoral</a></li>
+                <li><a href="centro.html">Centro</a></li>
+                <li><a href="sur.html">Sur</a></li>
+              </ul>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -48,6 +55,7 @@
       </div>
 
       <footer class="generico__footer">
+
         <div class="generico__footer__pie">
     
             <!--legajo agencia y datos formales-->
@@ -62,6 +70,11 @@
                 <p> Suscribite al newsletter y conseguí descuentos increibles!</p>
                 <div class="mb-3">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+                    <div class="button__newsletter">
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <input class="btn btn-primary" type="submit" value="Enviar">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

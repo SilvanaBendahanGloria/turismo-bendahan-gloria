@@ -30,6 +30,20 @@ font-family: 'Shadows Into Light', cursive;*/
     position: relative;
 }
 
+/*Botones*/
+/*Boton de "subir"*/
+.boton {
+    position: sticky;
+    bottom: 1vh;
+}
+
+/*Boton de suscripcion al newsletter*/
+.mb-3 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
 /*Footer Genérico*/
 .generico__footer {
     background-color: black;
@@ -45,7 +59,7 @@ font-family: 'Shadows Into Light', cursive;*/
     flex-wrap: wrap;
     justify-content:flex-start;
     align-content: center;
-    width: 75%;
+    width: 70%;
     padding-left: 10px;
 }
 
@@ -84,13 +98,13 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 .generico__footer__iconos__lista img {
-    border-radius: 50%;
+   border-radius: 50%;
 }
 
 /*Index*/
 .body__index {
     font-family: "Playfair Display", serif;
-    font-size: 62.5%;
+    font-size: 50%;
     overflow-x: hidden;
   }
   
@@ -131,9 +145,10 @@ font-family: 'Shadows Into Light', cursive;*/
     position: absolute;
     right: 20px;
     top: 20px;
-    font-size: 2.5rem;
+    font-size: 1.5 rem;
     transition: all 0.3s ease;
   }
+
   .menu_overlay .fas:hover {
     color: #4b134f;
     transform: scale(1.1) rotate(180deg);
@@ -144,8 +159,8 @@ font-family: 'Shadows Into Light', cursive;*/
     width: 100%;
     list-style: none;
     padding: 20px;
-    margin-left: 50px;
-    font-size: 4rem;
+    margin-left: 100px;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -158,7 +173,7 @@ font-family: 'Shadows Into Light', cursive;*/
   }
   
   .menu_overlay a:hover {
-    color: #c94b4b;
+    color: #c6df3c;
   }
   
   #menuBtn {
@@ -237,252 +252,277 @@ font-family: 'Shadows Into Light', cursive;*/
     .list a {
       font-size: 2rem;
     }
-  } /*Fin Index*/
-  
-/*Regiones*/
-.body__regiones {
-    font-family: "Playfair Display", serif;
-    font-size: 62.5%;
-    overflow-x: hidden;
-  }
-  
-  .menu_overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    color: #fff;
-    z-index: 100;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease;
-    background: #ffe259; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
-    background: linear-gradient(to right, #ffa751, #ffe259);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .list {
-    height: 40%;
-    width: 40%;
-    position: relative;
-    list-style: none;
-  }
-  
-  .list li {
-    height: 50%;
-    width: 50%;
-    padding: 10px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s ease;
-  }
-  
-  .list li:nth-child(1) {
-    top: 0;
-    left: 0;
+  } /*Fin Index*/ 
+
+/*Main Nosotros*/
+#nosotros__portada {
     background-color: #4b134f;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+#nosotros__portada h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+
+.nosotros__main {
+    background: #f7971e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffd200,
+      #f7971e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffd200,
+      #f7971e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.nosotros__main__grid {
+ display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.historia {
+    justify-content: center;
+    align-self:center;
+}
+
+/*Hover de Historia y Servicios*/
+  .artboard {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    height: 20%;
+    position: relative;
+    margin-top: 5vh;
+  }
+  @media (max-width: 37.5em) {
+    .artboard {
+      padding: 1rem;
+    }
   }
   
-  .list li:nth-child(2) {
-    bottom: 0;
-    left: 0;
-    background-color: #c94b4b;
+  .card {
+    flex: initial;
+    position: relative;
+    height: 25rem;
+    width: 48rem;
+    -moz-perspective: 200rem;
+    perspective: 200rem;
+    margin: 2rem;
   }
-  
-  .list li:nth-child(3) {
+  .card__side {
+    height: 25rem;
+    transition: all 2s ease;
+    position: absolute;
     top: 0;
-    right: 0;
-    background-color: #f7971e;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    /* We don't want to see the back part of the element. */
+    backface-visibility: hidden;
+    /* We don't want to see the back part of the element. */
+    border-radius: 3px;
+    overflow: hidden;
+    /* The image is overflowing the parent. */
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
   }
-  
-  .list li:nth-child(4) {
-    bottom: 0;
-    right: 0;
-    background-color: slateblue;
+  .card__side--front {
+    background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
   }
-  
-  .list li:nth-child(1):hover,
-  .list li:nth-child(2):hover {
-    z-index: 1;
-    animation: bounce 2s ease infinite;
+  .card__side--back {
+    background-color: #fff;
+    transform: rotateY(180deg);
   }
-  
-  .list li:nth-child(3):hover,
-  .list li:nth-child(4):hover {
-    z-index: 1;
-    animation: bounce2 2s ease infinite;
+  .card:hover .card__side--back {
+    transform: rotateY(0);
   }
-  
-  @keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1) rotate(10deg);
-    }
-    50% {
-      transform: scale(1);
-    }
-    75% {
-      transform: scale(1.1) rotate(10deg);
-    }
-    100% {
-      transform: scale(1);
-    }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg);
   }
-  
-  @keyframes bounce2 {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1) rotate(-10deg);
-    }
-    50% {
-      transform: scale(1);
-    }
-    75% {
-      transform: scale(1.1) rotate(-10deg);
-    }
-    100% {
-      transform: scale(1);
-    }
+  .card__theme {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 54%;
+    width: 90%;
+    text-align: center;
   }
-  
-  .list a {
-    font-size: 1.6rem;
-    text-decoration: none;
+  .card__theme-box {
+    color: #fff;
+    margin-bottom: 8rem;
+  }
+
+  .card__title {
+    font-family: "VT323", monospace;
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  .card__cover {
+    position: relative;
+    background-size: cover;
+    height: 6rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-image: linear-gradient(to top right, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  }
+  .card__heading {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+  }
+  .card__heading-span {
+    font-family: "VT323", monospace;
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
     color: #fff;
   }
-  
-  .menu_overlay .fas {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 2.5rem;
-    transition: all 0.3s ease;
-    z-index: 100;
+  .card__details {
+    font-family: "Inconsolata", monospace;
+    padding: 1rem 2rem;
   }
-  .menu_overlay .fas:hover {
-    color: #4b134f;
-    transform: scale(1.1) rotate(180deg);
+  .card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
   }
-  
-  #menuBtn {
-    display: none;
-  }
-  
-  .landing_page {
-    max-height: 100vh;
-    height: 100%;
+ 
+  @media only screen and (max-width: 37.5em), only screen and (hover: none) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+    }
+    .card__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+    }
+    .card__side--front {
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    }
+    .card__side--back {
+      transform: rotateY(0);
+    }
+    .card:hover .card__side--front {
+      transform: rotateY(0);
+    }
+    .card__details {
+      padding: 3rem 2rem;
+    }
+    .card__theme {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 5rem 4rem 1.5rem 4rem;
+      text-align: right;
+    }
+    .card__theme-box {
+      margin-bottom: 1.5rem;
+    }
+    .card__title {
+      font-size: 4rem;
+    }
+  } /*Fin Hover Historia y Servicios*/
+
+.servicios {
+    justify-content: center;
+    align-self:center;
+    text-align: center;
+}
+
+.card__details ul li {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.equipo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    justify-self: end;
+    padding: 20px;
+    text-align: center;
+    margin-top: 8vh;
+}
+
+.equipo h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.equipo p {
+    font-family: 'Gentium Plus', serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+/*Main Contacto*/
+#contacto__portada {
+    background-color: #4b134f ;
     width: 100%;
-    position: relative;
-  }
-  
-  .menu {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  
-  .fas {
-    font-size: 2rem;
-    color: #222;
-  }
-  
-  .fas:hover {
-    color: #4b134f;
-  }
-  
-  .side_text {
-    height: 10vh;
-    width: 60%;
-    color: #c94b4b;
-    position: absolute;
-    left: 0px;
-    bottom: 20px;
-    text-shadow: 0 0 1px #111;
-    padding: 10px;
-    font-size: 16px;
-    color: #4b134f;
-  }
-  
-#home__button {
-    height: 10vh;
-    width: 60%;
-    color: #c94b4b;
-    position: absolute;
-    left: 0px;
-    bottom: 75vh;
-    text-shadow: 0 0 1px #111;
-    padding: 10px;
-    font-size: 25px;
-    color: #4b134f;
-  }
-  .main_text {
-    color: #c94b4b;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0 0 1px #111;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+#contacto__portada h1 {
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+}
+
+.contacto__main {
+    background: #f7971e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #ffd200,
+      #f7971e
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #ffd200,
+      #f7971e
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.formulario {
+    width: 75vw;
     display: flex;
     flex-direction: column;
-  }
-  
-  .h2-r,
-  .h2-l {
-    font-size: 6rem;
-  }
-  
-  .h2-r {
-    transform: rotate(0deg);
-    margin-left: -100px;
-    z-index: 10;
-  }
-  
-  .h2-l {
-    margin-left: 100px;
-    background-color: #4b134f;
-    padding: 20px;
-    z-index: 0;
-  }
-  
-  @media screen and (max-width: 750px) and (min-width: 651px) {
-    .list li a {
-      font-size: 1.4rem;
-    }
-  
-    .list {
-      height: 30%;
-      width: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 650px) {
-    .list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .list li {
-      margin-bottom: 10px;
-      position: relative;
-    }
-  
-    .list a {
-      font-size: 1.4rem;
-    }
-  } /*Fin Regiones*/
-  
-
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 15%;
+    font-family: 'Gentium Plus', serif;
+    color: rebeccapurple;
+    font-size: 20px;
+}
 
 
 
@@ -519,138 +559,30 @@ font-family: 'Shadows Into Light', cursive;*/
 
 /*Botones*/
 .boton {
-    display: flex;
-    justify-content: center;
+    position: sticky;
+    bottom: 1vh;
 }
 
-button {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 20px;
-    color: white;
-    background-color: black;
-    padding: 8px 12px;
-    border-color: none;
-    border-radius: 60%;
-    border-width: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.btn a {
+    color: rgb(236, 92, 8);
+}
+.btn a:hover {
+    font-size: larger;
+    text-decoration: none;
+    color: rgb(235, 94, 43);
 }
 
-button a {
-    color: white;
-}
 
-button a:hover {
-    font-size: 25px;
-}
 
-.escribinos {
-    color: black;
-    font-family: 'Shadows Into Light';
-    font-size: 20px;
-}
 
-/*Main Nosotros*/
-#nosotros__portada {
-    background-image: url(imagenes/portada-nosotros-1.jpg);
-    background-position: center;
-    width: 100%;
-    object-fit: cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-}
 
-#nosotros__portada h1 {
-    font-family: 'Shadows Into Light', cursive;
-    color: white;
-}
 
-.nosotros__main__grid {
- display: grid;
-    grid-template-rows: 2fr 1fr 2fr;
-    grid-template-columns: 2fr 1fr;
-}
 
-.historia {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-content: center;
-    align-self:center;
-    padding: 20px 20px 0 20px;
-    text-align: center;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 35px;
-}
 
-.historia h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 35px;
-    margin-bottom: 30px
-}
 
-.mundito {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    justify-self: center;
-    align-self:center;
-}
 
-.servicios {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    justify-content: center;
-    align-self:center;
-    padding: 0 20px 20px 20px;
-    text-align: center;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 35px;
-}
 
-.servicios h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 35px;
-    margin-bottom: 30px
-}
 
-.servicios ul li {
-    list-style-type: square;
-    list-style-position: inside;
-}
-
-.equipo {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    justify-self: end;
-    padding: 20px;
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-.equipo h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-.equipo p {
-    font-family: 'Gentium Plus', serif;
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 50px;
-}
 
 /*Main NOA*/
 #noa__portada {
@@ -998,30 +930,10 @@ button a:hover {
     margin-bottom: 20px;
 }
 
-/*Main Contacto*/
-#contacto__portada {
-    background-image: url(imagenes/portada-contacto-1.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-}
-
-#contacto__portada h1 {
-    font-family: 'Shadows Into Light', cursive;
-    color: white;
-}
-
-.formulario {
-    height: 100vh;
-    background: #666666;
-}
-/*Formulario de contacto*/
 
 
-/*Footer*/
+
+
 
 
 

@@ -29,10 +29,9 @@
 </head>
 
 <body class="nosotros__body" id="inicio">
-
     <header class="fixed-top">
         <!--Navbar insertado-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="navbar fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark " class="navbar fixed-top">
             <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,33 +67,72 @@
     <main class="nosotros__main">
         <section id="nosotros__portada" class="generico__main">
             <h1> Quienes Somos </h1>    
-        </section> 
+        </section>
         
         <section class="nosotros__main__grid">
-            <div class="historia">
-                <h2>Historia</h2>   
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, est voluptas. Harum rerum fuga mollitia ea repudiandae? Repellendus omnis eum ratione illum dolores? Ullam eius in voluptas sed sapiente. Libero!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fuga eaque voluptatum in porro modi reprehenderit necessitatibus. Fugiat blanditiis commodi vitae aspernatur rem magnam nostrum! Quae officia cupiditate laudantium illo.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam fuga eaque voluptatum in porro modi reprehenderit necessitatibus. Fugiat blanditiis commodi vitae aspernatur rem magnam nostrum! Quae officia cupiditate laudantium illo.</p>
-            </div>
 
-            <div class="mundito">
-                <img src="imagenes/nosotros-fin.png" alt="Avión dando vuelta al mundo">   
-            </div>
-
-            <div id="servicios" class="servicios">
-                <h2>Servicios</h2>
-                    <ul>
-                        <li>Reservas de aereos y alojamientos</li>
-                        <li>Actividades</li>
-                        <li>Traslados</li>
-                        <li>Asesoramiento integral</li>
-                        <li>Viajas empresariales</li>
-                        <li>y más....</li>
-                    </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facere impedit ut eligendi pariatur dolore mollitia! Similique explicabo eveniet, amet animi aut voluptatem enim magnam officiis ipsam consequuntur nostrum obcaecati?</p>
-            </div>
-
+           <!--Historia y hover Historia--> 
+            <div class="artboard" class="historia">
+                <div class="card">
+               
+                 <div class="card__side card__side--back">
+                  <div class="card__cover">
+                   <h4 class="card__heading">
+                    <span class="card__heading-span">Somos Viajeros</span>
+                   </h4>
+                  </div>
+                  <div class="card__details">
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam reprehenderit quaerat dolorem dolore! Voluptatum, odit vero! Aliquam modi ratione optio odit amet ducimus voluptatum aut. Non obcaecati ipsam magnam sint!</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni deserunt iste, quos expedita ipsam maxime eius quae neque accusamus ab perspiciatis velit accusantium obcaecati, veritatis consectetur voluptate mollitia natus.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, repellendus accusantium! Iusto, eaque molestiae dolorum quod harum ipsam. Maxime laborum ex veniam doloribus nihil hic numquam animi debitis quisquam quod!</p>
+                  </div>
+                 </div>
+               
+                 <div class="card__side card__side--front">
+                  <div class="card__theme">
+                   <div class="card__theme-box">
+                    <p class="card__title">Nosotros</p>
+                   </div>
+                  </div>
+                 </div>
+               
+                </div>
+               </div>
+            
+            <!--Servicios y Hover Servicios-->
+                <div class="artboard" class="servicios">
+                    <div class="card">
+                   
+                     <div class="card__side card__side--back">
+                      <div class="card__cover">
+                       <h4 class="card__heading">
+                        <span class="card__heading-span">Viajá tranquilo</span>
+                       </h4>
+                      </div>
+                      <div class="card__details">
+                        <ul>
+                            <li>Reservas de aereos y alojamientos</li>
+                            <li>Actividades</li>
+                            <li>Traslados</li>
+                            <li>Asesoramiento integral</li>
+                            <li>Viajas empresariales</li>
+                            <li>y más....</li>
+                        </ul>
+                      </div>
+                     </div>
+                   
+                     <div class="card__side card__side--front">
+                      <div class="card__theme">
+                       <div class="card__theme-box">
+                        <p class="card__title">Servicios</p>
+                       </div>
+                      </div>
+                     </div>
+                   
+                    </div>
+                   </div>                
+           
+            <!--Equipo-->       
             <aside class="equipo">
                 <h2>Equipo</h2>
                     <div class="imagenes__verticales">
@@ -113,13 +151,12 @@
                     </div>
             </aside>
         </section>
-    </main>
 
-    <div class="boton"><!--ir a inicio--> 
-        <button>
-            <a href="#inicio">Subir</a>
-        </button>
+        <!--ir arriba--> 
+        <div class="boton">
+            <a class="btn " style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;" href="#inicio" role="button">Subir</a>
     </div> 
+    </main>
 
     <footer class="generico__footer">
 
@@ -137,6 +174,11 @@
                 <p> Suscribite al newsletter y conseguí descuentos increibles!</p>
                 <div class="mb-3">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+                    <div class="button__newsletter">
+                        <button type="button" class="btn btn-primary btn-sm">
+                            <input class="btn btn-primary" type="submit" value="Enviar">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
