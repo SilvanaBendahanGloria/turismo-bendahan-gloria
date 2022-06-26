@@ -30,11 +30,10 @@
 
 <body class="nosotros__body" id="inicio">
 
-    <header>
+    <header class="fixed-top">
         <!--Navbar insertado-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="navbar fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">Menú</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -99,16 +98,18 @@
             <aside class="equipo">
                 <h2>Equipo</h2>
                     <div class="imagenes__verticales">
-                        <img src="imagenes/persona-1.jpg" alt="foto de persona 1">
-                        <p>Team Leader</p>
-                    </div>   
-                    <div class="imagenes__verticales">
-                        <img src="imagenes/persona-2.jpg" alt="foto de persona 2">
-                        <p>Programación</p>
-                    </div>
-                    <div class="imagenes__verticales">
-                        <img src="imagenes/persona-3.jpg" alt="foto de persona 3">
-                        <p>Empresariales</p>
+                        <div>
+                            <img src="imagenes/persona-1.jpg" alt="foto de persona 1">
+                            <p>Team Leader</p>
+                        </div>
+                        <div>
+                            <img src="imagenes/persona-2.jpg" alt="foto de persona 2">
+                            <p>Programación</p>
+                        </div>
+                        <div>
+                            <img src="imagenes/persona-3.jpg" alt="foto de persona 3">
+                            <p>Empresariales</p>
+                        </div>
                     </div>
             </aside>
         </section>
@@ -134,12 +135,14 @@
             <!--suscripcion a newsletter-->
             <div class="generico__footer__pie__news">         
                 <p> Suscribite al newsletter y conseguí descuentos increibles!</p>
-                <p>Mail:_______________________</p>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+                </div>
             </div>
         </div>
     
         <div class="generico__footer__iconos">
-            <ul class="index__footer__iconos__lista">
+            <ul class="generico__footer__iconos__lista">
                 <li><!--ir a instagram-->
                     <a href="https://www.instagram.com/silvana.organiza.viajes/" target="_blank">
                         <img src="imagenes/instagram.png" alt="ir a Instagram" class="footer__iconos__redes">

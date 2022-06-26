@@ -30,11 +30,10 @@
 
 <body class="contacto__body" id="inicio">
 
-    <header>
+    <header class="fixed-top">
         <!--Navbar insertado-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" class="navbar fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">Menú</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,56 +70,8 @@
             <h1> Contacto </h1>       
         </section>  
 
-        <table class="formulario"> <!--Formulario de contacto provisorio-->
-            <tr>
-                <td>
-                    <p>Nombre y apellido:</p>
-                </td>
-                <td>
-                    <p>..........</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Mail:</p>
-                </td>
-                <td>
-                    <p>.........</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Teléfono:</p>
-                </td>
-                <td>
-                    <p>..........</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Tu consulta:</p>
-                </td>
-                <td>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis voluptatum vero tempora. Autem perspiciatis cum reiciendis, maxime natus minus est aliquid ullam, ad vitae impedit omnis, modi repellat! Voluptatum, sint?</p>
-            
-                </td>
-            </tr>
-        </table>
-
-        <div class="boton">
-            <button>
-                <p>Enviar</p>
-            </button>   
-        </div>
-
-        <!--musica-->
-        <section class="musica">
-            <h3 class="musica__titulo"> Musicalizá tus viajes con esta playlist de Spotify</h3>
-                <div class="musica__logos">
-                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4q6vTCEq1mFIy7mHcWpLLQ?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                     
-                    <img src="imagenes/spotify.png" alt="logo de Spotify">
-                </div>
+       <!--Formulario de Contacto-->
+       
         </section>
 
         <div class="boton"><!--ir a inicio--> 
@@ -144,12 +95,14 @@
             <!--suscripcion a newsletter-->
             <div class="generico__footer__pie__news">         
                 <p> Suscribite al newsletter y conseguí descuentos increibles!</p>
-                <p>Mail:_______________________</p>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+                </div>
             </div>
         </div>
 
         <div class="generico__footer__iconos">
-            <ul class="index__footer__iconos__lista">
+            <ul class="generico__footer__iconos__lista">
                 <li><!--ir a instagram-->
                     <a href="https://www.instagram.com/silvana.organiza.viajes/" target="_blank">
                         <img src="imagenes/instagram.png" alt="ir a Instagram" class="footer__iconos__redes">
