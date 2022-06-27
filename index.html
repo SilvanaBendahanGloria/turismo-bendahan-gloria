@@ -8,11 +8,17 @@
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     
-    <!--Link Externos-->
+    <!--Link Fontawesome-->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a7e9f794eb.js" crossorigin="anonymous"></script>
 
-    <!--Favicon, iconito en la pestaña-->
+    <!--Link a Bootstrap--> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+   <!--Link para Header de: https://ordinarycoders.com/blog/article/bootstrap-footers-->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Favicon-->
     <link rel="shortcut icon" href="imagenes/favicon.svg" type="image/x-icon">
 
     <title>SBG Organización de Viajes</title>
@@ -21,6 +27,7 @@
 <body class="body__index">
     
   <!--Full Menú: Simple Full Screen Menu With CSS, https://codepen.io/kiran-r-raj/pen/gOmvZBB-->
+  <section>
     <div class="container">
         <input type="checkbox" name="" id="menuBtn">
         <div class="menu_overlay">
@@ -58,57 +65,126 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <footer class="generico__footer">
-
-        <div class="generico__footer__pie">
-    
-            <!--legajo agencia y datos formales-->
-            <div class="generico__footer__pie__datos">
-                <p>Legajo AVyT N. 5555</p>
-                <p>Idoneo Responsable: Lic. Silvana A. Bendahan Gloria</p>
-                <p>CUIT: 33-33333333-3</p>
-            </div>
-    
-            <!--suscripcion a newsletter-->
-            <div class="generico__footer__pie__news">         
-                <p> Suscribite al newsletter y conseguí descuentos increibles!</p>
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
-                    <div class="button__newsletter">
-                        <button type="button" class="btn btn-primary btn-sm">
-                            <input class="btn btn-primary" type="submit" value="Enviar">
-                        </button>
-                    </div>
+   <!--Footer--> 
+    <footer>
+      <section>
+          <div class="footer-wrap">
+            <div class="container first_class">
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <h3>Newsletter</h3>
+                    <p>Enterate primero de las promos y novedades de tus destinos favoritos. Suscribite hoy y recibí un mail mensual.</p>
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                  <form class="newsletter">
+                    <input type="text" placeholder="Tu e-mail"> 
+                                                                  <button class="newsletter_submit_btn" type="submit"><i class="fa fa-paper-plane"></i></button>  
+                  </form>
+                  
+                  </div>
+                  <div class="col-md-4 col-sm-6">
+                  <div class="col-md-12">
+                    <div class="standard_social_links">
+                  <div>
+                    <li class="round-btn btn-facebook"><a href="https://facebook.com/silvana.organiza.viajes" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          
+                    </li>
+                    
+                    <li class="round-btn btn-instagram"><a href="https://instagram.com/silvana.organiza.viajes" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          
+                    </li>
+                    <li class="round-btn btn-whatsapp"><a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          
+                    </li>
+                    <li class="round-btn btn-envelop"><a href="#"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+          
+                    </li>
+                  </div>
+                </div>  
+                  </div>
+                    <div class="clearfix"></div>
+                  <div class="col-md-12"><h3 style="text-align: right;">Seguinos en nuestras redes sociales</h3></div>
+                  </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="generico__footer__iconos">
-            <ul class="generico__footer__iconos__lista">
-                <li><!--ir a instagram-->
-                    <a href="https://www.instagram.com/silvana.organiza.viajes/" target="_blank">
-                        <img src="imagenes/instagram.png" alt="ir a Instagram" class="footer__iconos__redes">
-                    </a>
-                </li> 
-                <li><!--ir a facebook-->
-                    <a href="https://www.facebook.com/silvana.organiza.viajes" target="_blank">
-                        <img src="imagenes/facebook.png" alt="ir a Facebook" class="footer__iconos__redes">
-                    </a>
-                </li> 
-                <li> <!--abrir whatsapp-->
-                    <a href="" target="_blank">
-                         <img src="imagenes/whatsapp.png" alt="ir a Whatsapp" class="footer__iconos__redes">
-                    </a>
-                </li>
-                <li> <!--ir a marcar telefono???-->
-                    <a href="" target="_blank">
-                        <img src="imagenes/phone.png" alt="ir a llamar por teléfono"class="footer__iconos__redes">
-                    </a>                 
-                </li>
-            </ul>
-         </div>
+              <div class="second_class">
+                <div class="container second_class_bdr">
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+          
+                    <div class="footer-logo"><i class="fa-thin fa-suitcase"></i>
+                    </div>
+                    <p>AVyT Nº 55.555</p>
+                    <p>Idoneo responsable: Lic. Silvana Bendahan Gloria</p>
+                    <p>Legajo Nº 12.345</p>
+                    
+                  </div>
+                  <div class="col-md-2 col-sm-6">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                      <li><a href="index.html">Home</a>
+                      </li>
+                      <li><a href="nosotros.html">Quienes Somos</a>
+                      </li>
+                      <li><a href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h3>Regiones</h3>
+                    <ul class="footer-category">
+                      <li><a href="noa.html">Región Norte</a>
+                      </li>
+                      <li><a href="litoral.html"> Región Litoral</a>
+                      </li>
+                      <li><a href="centro.html">Región Central</a>
+                      </li>
+                      <li><a href="sur.html">Región Sur</a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="col-md-3 col-sm-6">
+                    <h3>Links de Interés</h3>
+                    <ul class="footer-links">
+                      <li><a href="https://www.aviabue.org.ar" target="_blank" >Aviabue</a>
+                      </li>
+          
+                      <li><a href="https://www.buenosaires.gob.ar/jefedegobierno/secretariageneral/institucional-ente-de-turismo">Ente de Turismo de la Ciudad</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
+              </div>
+              
+              <div class="row">
+                
+                <div class="container-fluid">
+                <div class="copyright"> SBG Organización de Viajes</div>
+                </div>
+                
+              </div>
+            </div>
+      </section>    
     </footer>
+
+    <!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     
-</body>
+    <!-- Scripts -->
+    <script src="scripts/index.js"></script>
+
+    <!--Scripts Footer-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+    <!-- Font Awesome 5 links-->
+    <script src="https://kit.fontawesome.com/fddf5c0916.js" crossorigin="anonymous"></script>
+  </body>
 </html>
