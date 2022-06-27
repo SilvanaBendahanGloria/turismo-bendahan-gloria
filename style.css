@@ -594,7 +594,7 @@ font-family: 'Shadows Into Light', cursive;*/
     }
 }
 
-/*@medias Index - pantallas grandes*/
+/*@medias Nosotros - pantallas grandes*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .nosotros__main__grid {
         display:block;
@@ -661,15 +661,40 @@ font-family: 'Shadows Into Light', cursive;*/
 /*No @media needed :)*/
 /*Fin Contacto*/
 
+/*REGIONES*/
 
+/*SUR*/
+/*Destacado del mes*/
+.animacion {
+   width: 100px;
+   height: 50px;
+   text-align: center;
+   background-color: #f7971e;
+   animation-name: animacion_destino;
+   animation-iteration-count: infinite;
+   animation-timing-function:linear;
+   animation-duration: 3s;
+   animation-delay: 1s;
+}
 
+@keyframes animacion_destino {
+    0%{ width: 150px; }
+    0.2s{ width: 180px; }
+    25%{ width: 200px; }
+    50%{ width: 225px;}
+    75%{ width: 200px;}
+    100%{ width: 150px;}
+ }
 
-
-
-
-
-
-
+/*@medias Sur - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+    .animacion {
+        display: none;
+    }
+    
+}
+/*Fin @medias SUR*/
+/*Fin SUR*/
 
 
 
@@ -984,85 +1009,6 @@ font-family: 'Shadows Into Light', cursive;*/
     margin-bottom: 20px;
 }
 
-/*Main SUR*/  
-#sur__portada {
-    background-image: url(imagenes/portada-sur-1.jpg);
-    background-position: center;
-    width: 100%;
-}
-
-.sur__main__inicio { 
-  background-color: black;
-  color: white;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 20px;
-  padding: 25px;
-  text-align: center;
-}
-
-.sur__main__medio {
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 3fr;
-}
-
-.sur__main__left {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    font-family: 'Gentium Plus', serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 20px;
-    padding: 50px 25px;
-}
-
-.sur__main__centro {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.sur__main__right {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    font-family: 'Gentium Plus', serif;
-    font-size: 20px;
-    text-align: center;
-    line-height: 20px;
-    padding: 50px 25px;
-}
-
-.sur__main__pie { 
-    background-color: black;
-    text-align: center;
-    justify-content: space-evenly;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.sur__aside {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
 
 /*Estilo Mobile para 480px o menos*/
 @media only screen and (max-width: 480px) {
@@ -1174,37 +1120,5 @@ font-family: 'Shadows Into Light', cursive;*/
 
     .centro__aside h3 {
         font-size: 20px;
-    }
-
-    /*Main SUR para Mobile*/  
-    #sur__portada {
-        background-image: url(imagenes/portada-sur-1.jpg);
-        background-position: center;
-        width: 100%;
-    }
-
-    #sur__portada h1 {
-        text-shadow: 0 0  10px black; 
-    }
-
-    .sur__main__inicio {
-        font-size: 15px;
-    }
-
-    .sur__main__medio {
-        display: block;
-    }
-
-    .sur__main__centro__img__mobile {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .sur__aside {
-        font-family: 'Shadows Into Light', cursive;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
 }
