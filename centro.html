@@ -68,90 +68,119 @@
     </header>
 
     <main class="centro__main">
-        <section id="centro__portada" class="generico__main">
-            <h1> Región Centro </h1>    
-        </section>    
+
+        <!--Carrusel de Bienvenida-->
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagenes/mendoza_potrerillos_lujan _de _cuyo2.jpg" class="d-block w-100" alt="PErsonas andando en bicicleta en la montaña, Mendoza">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h3>Región Centro</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/buenos-aires-claromeco-pesca.jpg" class="d-block w-100" alt="Persona pescando en el mar, Buenos Aires">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Región Centro</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/puerto-madero-2.jpg" class="d-block w-100" alt="Puente de la mujer en Puerto Madero, Ciudad de Buenos Aires">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Región Centro</h3>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>   
 
         <section class="centro__main__inicio">
-            <div>
-                <p>Mendoza</p>
-                 <a href="#mendoza"><img src="imagenes/mendoza-rafting.jpg" alt="Raftin en el Río Atuel, Mendoza" class="mendoza__mobile"></a>
+            <!--Provincias-->
+            <!--Fila 1-->
+            <div class="row">
+                <!--Mendoza-->
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagenes/mendoza_vinedo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Mendoza</p>
+                        </div>
+                    </div>
+                </div>
+                <!--San Luis-->
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagenes/sanluis_potrerodelosfunes1.JPG" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">San Luis</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Córdoba-->
+                <div class="col-sm-4">    
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagenes/cordoba-calamuchita.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">Córdoba</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>Córdoba</p>
-                <a href="#cordoba"><img src="imagenes/cordoba-lago.JPG" alt="Auto bajando la montaña hacia un lago, Córdoba" class="cordoba__mobile"></a>
+
+            <!--Fila 2-->
+            <div class="row">   
+                <!--La Pampa-->
+                <div class="col-sm-4">  
+                    <div class="card" style="width: 18rem;">
+                        <img src="imagenes/la-pampa.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <p class="card-text">La Pampa</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Buenos Aires-->
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                            <img src="imagenes/tigre-lancha-colectiva.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Buenos Aires</p>
+                            </div>
+                    </div>
+                </div>
+                <!--Ciudad de Buenos Aires Buenos Aires-->
+                <div class="col-sm-4">
+                    <div class="card" style="width: 18rem;">
+                            <img src="imagenes/teatro-colon-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <p class="card-text">Ciudad de Buenos Aires</p>
+                            </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="mendoza">
-            <h2>Descubrí Mendoza</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi nobis nisi obcaecati modi veritatis reprehenderit perspiciatis assumenda dicta ut necessitatibus culpa, delectus, est, commodi odit porro quisquam minus id!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ullam assumenda. Impedit molestiae aspernatur eaque. Ex dicta deserunt a, rem maxime quia quasi at, fuga minima, ratione optio eius est?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni distinctio iste dolor ratione omnis tempora cum ea, asperiores debitis mollitia perspiciatis quidem temporibus, incidunt soluta rerum reiciendis animi. Animi, nihil? </p>
-                
-                <div class="tres__imagenes">
-                    <div>
-                        <img src="imagenes/mendoza-cristo.JPG" alt="Cristo Redentr en Alta Montaña, Mendoza" class="mendoza__mobile">
-                    </div>
-                    <div>
-                        <img src="imagenes/mendoza-capital.JPG" alt="Parque Independencia, Mendoza" class="mendoza__mobile">
-                    </div>
-                </div>
-
-            <p class="escribinos"> Para más información de esta propuesta: 
-                <div class="boton">
-                    <button>
-                        <a href="contacto.html"  >Contactanos</a>
-                    </button>
-                </div>
-            </p> <!--ir a contacto.html-->
             
-            <div class="boton"><!--ir a inicio--> 
-                <button>
-                    <a href="#inicio">Subir</a>
-                </button>
-            </div>
         </section>
 
         <section id="cordoba">
-            <h2>El Encanto de Mina Clavero</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi nobis nisi obcaecati modi veritatis reprehenderit perspiciatis assumenda dicta ut necessitatibus culpa, delectus, est, commodi odit porro quisquam minus id!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, ullam assumenda. Impedit molestiae aspernatur eaque. Ex dicta deserunt a, rem maxime quia quasi at, fuga minima, ratione optio eius est?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni distinctio iste dolor ratione omnis tempora cum ea, asperiores debitis mollitia perspiciatis quidem temporibus, incidunt soluta rerum reiciendis animi. Animi, nihil?</p>
-
-                <div class="tres__imagenes">
-                    <div>
-                        <img src="imagenes/cordoba-hotel.JPG" alt="Hotel panorámico, Córdoba" class="cordoba__mobile">
-                    </div>
-                    <div>
-                        <img src="imagenes/cordoba-nido-del-condor.JPG" alt="Nido del Cóndor, Córdoba" class="cordoba__mobile">
-                    </div>
-                </div>
-
-            <p> Para más información de esta propuesta: 
-                <div class="boton">
-                    <button>
-                        <a href="contacto.html"  >Contactanos</a>
-                    </button>
-                </div>
-            </p> <!--ir a contacto.html-->
+            
         </section>
-        
-        <section class="centro__aside">
-            <h3>Otras Opciones:</h3>
 
-            <div class="tres__imagenes">
-                <div>
-                    <img src="imagenes/centro1.png" alt="paquete de vacaciones en oferta" class="imagenes__aside__mobile">
-                </div>
-                <div>
-                    <img src="imagenes/centro2.png" alt="paquete de vacaciones en oferta" class="imagenes__aside__mobile">
-                </div>
-                <div>
-                    <img src="imagenes/centro3.png" alt="paquete de vacaciones en oferta" class="imagenes__aside__mobile">
-                </div>
-            </div>
-        </section>
 
         <!--ir arriba--> 
         <div class="boton">

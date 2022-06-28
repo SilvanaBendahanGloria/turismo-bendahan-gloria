@@ -1056,44 +1056,21 @@ footer dl, ol, ul {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Main CENTRO*/   
-#centro__portada {
-    background-image: url(imagenes/portada-centro-1.jpg);
-    background-position: center;
-    width: 100%;
-}
 
-.centro__main {
-    background-color: black;
-    color: white;
-}
-
-.centro__main .boton {
-    border-color: white;
-    border-top: 0;
-    border-left: 0;
-    border-right: 1px solid white;
-    border-bottom: 2px solid white;
-    border-radius: 50%;
-}
-
-#mendoza .escribinos {
-    color: white;
-}
-
-.centro__main__inicio {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 50vh;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-}
 
 #mendoza {
     width: 50vw;
