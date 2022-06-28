@@ -37,18 +37,23 @@ font-family: 'Shadows Into Light', cursive;*/
     bottom: 1vh;
 }
 
+/*Header*/
+
+/*Fin Header*/
+
 /*Footer*/
 .round-btn {display: inline;height: 40px; width: 40px; background:#fff;border-radius: 50%;float: left;margin: 15px 8px;box-shadow: 2px 2px 5px 0px rgb(82, 0, 67);border: 1px solid;/*border: 1px solid #622657;*/}
 .round-btn a {display: block !important;padding: 7px 12px;font-size: 18px;border-radius: 50%;}
 .round-btn .icon {padding: 3px;}
 .round-btn .icon img{height: 24px; width: 32px;margin-top: 6px;}
 .btn-facebook a {color: #3b5998;padding: 8px 13px;}
-.btn-linkedin a {color: #007bb6;}
-.btn-twitter a{color: #1c9deb;}
 .btn-instagram a{color: #dd3f5c;}
 .btn-whatsapp a{color: #155E54;}
 .btn-envelop a{color: #D6403A;font-size: 15px; padding: 9px 12px;}
 .standard_header .standard_social_links {margin-left: 1rem;}
+.standard_social_links {
+    margin-left: 7vw;
+}
 
   /*
   =========================================================================================
@@ -156,15 +161,14 @@ font-family: 'Shadows Into Light', cursive;*/
     content: "\f1ac";
 }
 
-.copyright {
-    border-top: 1px solid #111;
+.copyright { 
     font-size: 14px;
     color: #ccc;
     padding-top: 15px;
     text-align: center;
     padding-bottom: 15px;
-    background: #222;
 }
+
 footer .second_class{
     border-bottom: 1px solid #444;
     padding-bottom: 25px;
@@ -194,7 +198,7 @@ footer .newsletter input[type="text"] {
 .newsletter .newsletter_submit_btn {
     background: #fff;
     position: absolute;
-    right: 30px;
+    right: 10%;
     border: 0;
     top: 26px;
     font-size: 17px;
@@ -254,7 +258,7 @@ footer dl, ol, ul {
     overflow-x: hidden;
 }
   
-  .container {
+  .container-fluid {
     width: 100vw;
     min-width: 100%;
     height: 100vh;
@@ -802,7 +806,10 @@ footer dl, ol, ul {
 /*No @media needed :)*/
 /*Fin Contacto*/
 
+
+
 /*REGIONES*/
+
 
 /*SUR*/
 /*Destacado del mes*/
