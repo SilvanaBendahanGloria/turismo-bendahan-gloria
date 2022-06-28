@@ -809,7 +809,32 @@ footer dl, ol, ul {
 
 
 /*REGIONES*/
+/*LITORAL*/
 
+
+
+
+/*CENTRO*/
+.centro__main {
+    background-color: black;
+}
+
+/*@medias CENTRO - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+    .centro__main {
+        background-color: white;
+    }
+    
+}
+
+/*@medias CENTRO - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .centro__main {
+        background-color: white;
+    }
+}
+/*Fin @medias CENTRO*/
+/*Fin Centro*/
 
 /*SUR*/
 /*Destacado del mes*/
@@ -839,7 +864,6 @@ footer dl, ol, ul {
     .animacion {
         display: none;
     }
-    
 }
 /*Fin @medias SUR*/
 /*Fin SUR*/
@@ -864,22 +888,6 @@ footer dl, ol, ul {
 
 
 
-/*Alineacion de imagenes en sentido horizontal*/
-.tres__imagenes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    ;
-}
-
-/*Alineacion de imágenes en sentido vertical*/
-.imagenes__verticales {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;   
-}
 
 /*Main NOA*/
 #noa__portada {
@@ -1054,84 +1062,6 @@ footer dl, ol, ul {
 .litoral__aside {
     background-color: black;
     text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Main CENTRO*/   
-
-
-#mendoza {
-    width: 50vw;
-    padding-top: 40px; /*por el header*/
-}
-
-#mendoza h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#mendoza p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-#cordoba {
-    width: 50vw;
-    margin-left: 45vw;
-}
-
-#cordoba h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px;
-    padding-top: 40px; /*por el header*/
-    text-align: center;
-}
-
-#cordoba p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: flex;
-    justify-content: flex-end;
-    justify-self: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
-    align-self: flex-end;
-}
-
-.centro__aside {
-    text-align: center; 
-    padding-top: 20px;
-}
-
-.centro__aside h3 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 
