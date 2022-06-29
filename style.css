@@ -30,6 +30,10 @@ font-family: 'Shadows Into Light', cursive;*/
     position: relative;
 }
 
+.enlace:after {    /*se queda siempre??????*/
+  content: "✈️";
+}
+
 /*Botones*/
 /*Boton de "subir"*/
 .boton {
@@ -830,13 +834,28 @@ footer dl, ol, ul {
   .noa__main {
       background-color: white;
   }
-  
+
+  #centrado {
+    justify-content: center;
+  }
+
+  #derecha {
+    justify-content: center;
+  }
 }
 
 /*@medias NOA - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .noa__main {
       background-color: white;
+  }
+
+  #centrado {
+    justify-content: center;
+  }
+
+  #derecha {
+    justify-content: center;
   }
 }
 /*Fin @medias NOA*/
