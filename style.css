@@ -474,11 +474,11 @@ footer dl, ol, ul {
         margin-left: 0%;
          }
 }
-/*Fin @medias*/ 
+/*Fin @medias index*/ 
 /*Fin Index*/ 
 
 
-/*Main Nosotros*/
+/*Nosotros*/
 #nosotros__portada {
     background-color: #4b134f;
     width: 100%;
@@ -760,7 +760,7 @@ footer dl, ol, ul {
         justify-content: space-evenly;
     }
 }
-/*Fin @medias*/
+/*Fin @medias nosotros*/
 /*Fin Nosotros*/
 
 /*Main Contacto*/
@@ -806,9 +806,42 @@ footer dl, ol, ul {
 /*No @media needed :)*/
 /*Fin Contacto*/
 
-
-
 /*REGIONES*/
+
+/*NORTE*/
+.noa__main {
+  background-color: black;
+}
+
+#derecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+#centrado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*@medias NOA - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+  .noa__main {
+      background-color: white;
+  }
+  
+}
+
+/*@medias NOA - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .noa__main {
+      background-color: white;
+  }
+}
+/*Fin @medias NOA*/
+/*Fin NOA*/
+
 /*LITORAL*/
 .video {
     display: flex;
@@ -819,10 +852,8 @@ footer dl, ol, ul {
 }
 
 video {
-    border-radius: 50%;
+    border-radius: 10%;
 }
-
-
 
 /*CENTRO*/
 .centro__main {
@@ -877,313 +908,3 @@ video {
 }
 /*Fin @medias SUR*/
 /*Fin SUR*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Main NOA*/
-#noa__portada {
-    background-image: url(imagenes/portada-noa-1.jpg);
-    background-position: center;
-    width: 100%;
-}
-
-.noa__main__grid {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 1vw;
-}
-
-.glamping {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    justify-self: center;
-    margin-top: 15px;
-    margin-left: 10px;
-    padding: 20px 20px 30px 20px;
-    text-align: center;
-    background-color: rgb(235, 94, 43);
-    border-radius: 15%;
-    color: white;
-    align-items: center;
-}
-
-.glamping h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.glamping p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-#noa__boton__especial {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.tucuman {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    justify-self: center;
-    align-self:center;
-    padding: 20px 20px 30px 20px;
-    margin-top: 15px;
-    margin-left: 10px;
-    text-align: center;
-    background-color: rgb(235, 94, 43);
-    border-radius: 15%;
-    color: white;
-    align-items: center;
-}
-
-.tucuman h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px
-}
-
-.tucuman p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.noa__aside { 
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
-
-.noa__aside h3 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/*Main LITORAL*/
-#litoral__portada {
-    background-image: url(imagenes/portada-litoral-1.JPG);
-    background-position: bottom;
-    width: 100%;
-}
-
-.litoral__main {
-    background-image: url(imagenes/litoral-fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: top;
-    object-fit: cover;
-}
-
-.misiones {
-    padding: 10px;
-    width: 50%;
-}
-
-.misiones h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align:left;
-    color: white;
-}
-
-
-
-.misiones p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    color: white;    
-}
-
-.ibera {
-    width: 50%;
-    margin-left: 50%;
-    padding: 10px;
-}
-
-.ibera h2 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: white;
-}
-
-.ibera p {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: justify;
-    color: white;
-}
-
-.palmar {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-family: 'Shadows Into Light', cursive;
-    line-height: 40px;
-    font-size: 20px;
-}
-
-.litoral__aside h3 {
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.litoral__aside {
-    background-color: black;
-    text-align: center;
-}
-
-
-/*Estilo Mobile para 480px o menos*/
-@media only screen and (max-width: 480px) {
-    /*Main NOA Mobile*/
-    .noa__main__grid {
-        display: block;
-    }
-    
-    .glamping {
-        border-radius: 10%;
-    }
-
-    .glamping h2 {
-        font-size: 25px;
-    }
-    
-    .tucuman {
-        border-radius: 10%;
-    }
-
-    .tucuman h2 {
-        font-size: 25px;
-    }
-    
-    .noa__aside h3 {
-        font-size: 20px;
-    }
-
-    /*Main LITORAL Mobile*/
-    .litoral__main {
-        background-color: rgb(13, 73, 13);
-        background-image: none;
-    }
-
-    .misiones {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .misiones h2 {
-        font-size: 25px;
-    }
-
-    .misiones p {
-        line-height: 25px;
-        text-align: justify;   
-    }
-
-    .ibera {
-        width: 100%;
-        margin-left: 0;
-        padding: 15px;
-    }
-
-    .ibera h2 {
-        font-size: 25px;
-        text-align: justify;
-    }
-
-    .ibera p {
-        line-height: 25px;
-        text-align: justify;
-    }
-
-    .palmar {
-        line-height: 30px;
-        font-size: 18px;
-    }
-
-    .litoral__aside h3 {
-        font-size: 20px;
-    }
-
-    /*Main CENTRO para Mobile*/  
-    .centro__main__inicio {
-        font-size: 25px;
-    }
-
-    .mendoza__mobile {
-        width: 40vw;
-        height: 30vh;
-        object-fit: cover;
-    }
-
-    .cordoba__mobile {
-        width: 40vw;
-        height: 30vh;
-        object-fit: cover;
-    }
-
-    #mendoza {
-        width: 100vw;
-        padding-top: 70px; /*por el header*/
-    }
-
-    #mendoza h2 {
-        font-size: 25px;
-    }
-
-    #cordoba {
-        width: 100vw;
-        margin-left: 0vw;
-    }
-
-    #cordoba h2 {
-        font-size: 25px;
-        padding-top: 90px; /*por el header*/
-    }
-
-    .centro__aside h3 {
-        font-size: 20px;
-    }
-}
