@@ -30,10 +30,6 @@ font-family: 'Shadows Into Light', cursive;*/
     position: relative;
 }
 
-.enlace:after {    /*se queda siempre??????*/
-  content: "✈️";
-}
-
 /*Botones*/
 /*Boton de "subir"*/
 .boton {
@@ -42,7 +38,10 @@ font-family: 'Shadows Into Light', cursive;*/
 }
 
 /*Header*/
-
+#navbar {                  /*Sigue generando un espacio raro*/
+  width: 100vw;
+  min-width: 100%;
+}
 /*Fin Header*/
 
 /*Footer*/
@@ -59,15 +58,9 @@ font-family: 'Shadows Into Light', cursive;*/
     margin-left: 7vw;
 }
 
-  /*
-  =========================================================================================
-                                    footer
-  =========================================================================================
-  */
-  
-  .footer-wrap {
-    padding-top: 43px;
-    background-size: cover;
+.footer-wrap {
+  padding-top: 43px;
+  background-size: cover;
 }
 
 .footer-wrap h3 {
@@ -177,10 +170,12 @@ footer .second_class{
     border-bottom: 1px solid #444;
     padding-bottom: 25px;
 }
+
 footer .first_class {
     padding-bottom: 21px;
     border-bottom: 1px solid #444;
 }
+
 footer .first_class p, footer .first_class h3{
     margin: 0 0;
     
@@ -230,17 +225,24 @@ footer .round-btn a {
 }
 
 footer .round-btn {
-    box-shadow: 2px 2px 5px 0px #222 !important;}
+    box-shadow: 2px 2px 5px 0px #222 !important;
+}
 
 footer .round-btn {
-    margin: 15px 4px;}
+    margin: 15px 4px;
+}
   
 footer dl, ol, ul {
     padding-left: 5px;
 }
-  footer li{
+
+footer li{
     list-style: none;
-  }
+}
+
+.enlace:after {    /*se queda siempre??????*/
+  content: "✈️";
+}
 
 @media(max-width:768px){
     .footer-wrap h3 {
@@ -249,190 +251,196 @@ footer dl, ol, ul {
     footer .round-btn {
     margin: 15px 4px;}
 }
+
 @media(max-width:320px){
 .copyright {
     font-size: 13px;}
 } 
+/*Fin @medias Footer*/
 /*Fin Footer*/
 
 /*Index*/
+.conteiner {
+  width: 100vw;
+  min-width: 100%;
+}
+
+section div .conteiner {
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+
 .body__index {
     font-family: "Playfair Display", serif;
     font-size: 50%;
     overflow-x: hidden;
 }
   
-  .container-fluid {
-    width: 100vw;
-    min-width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    position: relative;
-    background: #f7971e; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
+#color__menu {
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  background: #f7971e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
       to right,
       #ffd200,
       #f7971e
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
+  background: linear-gradient(
       to right,
       #ffd200,
       #f7971e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+}
   
-  .menu_overlay {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    color: #fff;
-    background: #c94b4b;
-    background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
-    background: linear-gradient(to right, #4b134f, #c94b4b);
-    z-index: 100;
-    transform: translateX(110%);
-    transition: transform 0.5s ease;
-  }
+.menu_overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  background: #c94b4b;
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  background: linear-gradient(to right, #4b134f, #c94b4b);
+  z-index: 100;
+  transform: translateX(110%);
+  transition: transform 0.5s ease;
+}
   
-  .menu_overlay .fas {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 1.5 rem;
-    transition: all 0.3s ease;
-  }
+.menu_overlay .fas {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5 rem;
+  transition: all 0.3s ease;
+}
 
-  .menu_overlay .fas:hover {
-    color: #4b134f;
-    transform: scale(1.1) rotate(180deg);
-  }
+.menu_overlay .fas:hover {
+  color: #4b134f;
+  transform: scale(1.1) rotate(180deg);
+}
   
-  .menu_overlay ul {
-    height: 100%;
-    width: 100%;
-    list-style: none;
-    padding: 20px;
-    margin-left: 100px;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
+.menu_overlay ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  margin-left: 100px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
   
-  .regiones { 
-    margin-left: 120px;
-  }
+.regiones { 
+  margin-left: 120px;
+}
 
-  .menu_overlay a {
-    color: #fff;
-    text-decoration: none;
-  }
+.menu_overlay a {
+  color: #fff;
+  text-decoration: none;
+}
   
-  .menu_overlay a:hover {
-    color: #c6df3c;
-  }
+.menu_overlay a:hover {
+  color: #c6df3c;
+}
   
-  #menuBtn {
-    display: none;
-  }
+#menuBtn {
+  display: none;
+}
   
-  #menuBtn:checked ~ .menu_overlay {
-    transform: translateX(0);
-  }
+#menuBtn:checked ~ .menu_overlay {
+  transform: translateX(0);
+}
   
-  .landing_page {
-    max-height: 100vh;
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
+.landing_page {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
   
-  .menu {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
   
-  .fas {
-    font-size: 2rem;
-    color: #222;
-  }
+.fas {
+  font-size: 2rem;
+  color: #222;
+}
   
-  .fas:hover {
-    color: #4b134f;
-  }
+.fas:hover {
+  color: #4b134f;
+}
   
-  .side_text {
-    height: 10vh;
-    width: 60%;
-    color: #c94b4b;
-    position: absolute;
-    left: 0px;
-    bottom: 20px;
-    text-shadow: 0 0 1px #111;
-    padding: 10px;
-    font-size: 16px;
-    color: #4b134f;
-  }
+.side_text {
+  height: 10vh;
+  width: 60%;
+  color: #c94b4b;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  text-shadow: 0 0 1px #111;
+  padding: 10px;
+  font-size: 16px;
+  color: #4b134f;
+}
   
-  .main_text {
-    color: #c94b4b;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 0 0 1px #111;
-    display: flex;
-    flex-direction: column;
-  }
+.main_text {
+  color: #c94b4b;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 1px #111;
+  display: flex;
+  flex-direction: column;
+}
   
-  .h2-r,
-  .h2-l {
-    font-size: 6rem;
-  }
+.h2-r,
+.h2-l {
+  font-size: 6rem;
+}
   
-  .h2-r {
-    transform: rotate(0deg);
-    margin-left: -100px;
-    z-index: 100;
-  }
+.h2-r {
+  transform: rotate(0deg);
+  margin-left: -100px;
+  z-index: 100;
+}
 
-  .h2-l {
-    margin-left: 100px;
-    background-color: #4b134f;
-    padding: 20px;
-    z-index: 0;
-  }
+.h2-l {
+  margin-left: 100px;
+  background-color: #4b134f;
+  padding: 20px;
+  z-index: 0;
+}
   
  
 /*@medias para el Index - pantalla mobile*/
 @media screen and (max-width: 480px) {
-   .h2-r,
-   .h2-l {
-        font-size: 3rem;
-        margin-left: 0;
-        }
-
-    .menu_overlay ul {
-        margin-left: 0px;
-        text-align: right;
-        justify-content: center;
-        align-items:flex-start;
-        }
-
-    .regiones {
-        margin-left: -10px;
-        line-height: 45px;
-        }
-
-   .generico__footer__pie__news {
-     margin-left: 0%;
+  .h2-r,
+  .h2-l {
+      font-size: 3rem;
+      margin-left: 0;
       }
-    
-    .generico__footer__iconos__lista { 
-        gap: 0px; 
+
+  .menu_overlay ul {
+      margin-left: 0px;
+      text-align: right;
+      justify-content: center;
+      align-items:flex-start;
+      }
+
+  .regiones {
+      margin-left: -10px;
+      line-height: 45px;
       }
 }
 
@@ -462,22 +470,7 @@ footer dl, ol, ul {
         margin-left: -10px;
         line-height: 45px;
         }
-
-   .generico__footer__pie__news {
-     margin-left: 0%;
-      }
-    
-    .generico__footer__iconos__lista { 
-        gap: 0px; 
-      }
 }   
-
-/*@medias Index - pantallas grandes*/
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-    .generico__footer__pie__news {
-        margin-left: 0%;
-         }
-}
 /*Fin @medias index*/ 
 /*Fin Index*/ 
 
@@ -912,7 +905,7 @@ video {
 
 @keyframes animacion_destino {
     0%{ width: 150px; }
-    0.2s{ width: 180px; }
+    0.2%{ width: 180px; }
     25%{ width: 200px; }
     50%{ width: 225px;}
     75%{ width: 200px;}
