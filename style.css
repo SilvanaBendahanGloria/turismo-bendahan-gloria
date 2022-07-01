@@ -1,6 +1,7 @@
 /*Scroll*/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*Borrar márgenes por default*/
@@ -21,10 +22,31 @@ a {
 }
 
 /*Google Fonts:
-font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto
-font-family: 'Dancing Script', cursive;  --> Para Nosotros y Servicios y Equipo
-font-family: 'DM Serif Text', serif;  -->Título de cada provincia*/
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=DM+Serif+Text&family=Dancing+Script&display=swap');
+font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto: class="font__alegreya"
+font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo class="font__dancing"
+font-family: 'DM Serif Text', serif;  -->Título de cada provincia class="font__dm"
+font-family: 'Assistant', sans-serif; --> textos generales class="font__assistant"*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Assistant:wght@200&family=DM+Serif+Text&family=Dancing+Script&display=swap');
+
+.font__alegreya {
+  font-family: 'Alegreya', serif;
+}
+
+.font__dancing {
+  font-family:'Dancing Script', cursive;
+}
+
+.font__dm {
+  font-family: 'DM Serif Text', serif;
+}
+
+.font__assistant {
+  font-family:'Assistant', sans-serif;
+}
+
+p {
+  font-family: 'Assistant', sans-serif ;
+}
 
 /*Body*/
 .body {
@@ -482,7 +504,6 @@ section div .conteiner {
 }
 
 #nosotros__portada h1 {
-    font-family: 'Shadows Into Light', cursive;
     color: white;
 }
 
@@ -589,7 +610,6 @@ section div .conteiner {
   }
 
   .card__title {
-    font-family: "VT323", monospace;
     text-transform: uppercase;
     font-size: 6rem;
     font-weight: 100;
@@ -617,7 +637,6 @@ section div .conteiner {
   }
 
   .card__heading-span {
-    font-family: "VT323", monospace;
     font-size: 2.2rem;
     font-weight: 300;
     text-transform: uppercase;
@@ -625,7 +644,6 @@ section div .conteiner {
     color: #fff;
   }
   .card__details {
-    font-family: "Inconsolata", monospace;
     padding: 1rem 2rem;
   }
 
@@ -708,7 +726,6 @@ section div .conteiner {
 }
 
 .equipo h2 {
-    font-family: 'Shadows Into Light', cursive;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 40px;
@@ -716,7 +733,6 @@ section div .conteiner {
 }
 
 .equipo p {
-    font-family: 'Gentium Plus', serif;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 50px;
@@ -787,7 +803,6 @@ section div .conteiner {
 }
 
 #contacto__portada h1 {
-    font-family: 'Shadows Into Light', cursive;
     color: white;
 }
 
