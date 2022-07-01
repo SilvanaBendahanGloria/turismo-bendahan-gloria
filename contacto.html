@@ -45,7 +45,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Quienes Somos</a>
+                    <a class="nav-link" href="nosotros.html">Quienes Somos</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -98,10 +98,27 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
         </div>
+
+        <!--Botón Enviar + pop up de Gracias-->
+        <!-- Button trigger modal -->
         <div>
-            <button type="button" class="btn btn-primary btn-sm">
-                <input class="btn btn-primary" type="submit" value="Enviar">
-            </button>
+          <button type="button" class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Enviar
+          </button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¡Gracias!</h5>
+                <button type="button" class="btn-close btn-sm btn-dark" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              Gracias por contactarnos. En breve responderemos su consulta.
+              </div>
+            </div>
+          </div>
         </div>
       </form>
 
