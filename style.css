@@ -7,7 +7,7 @@ html {
 * {
     margin: 0;
     padding: 0;
-   /* box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 /*Borrar viñeta en listas no ordenadas*/
@@ -21,10 +21,10 @@ a {
 }
 
 /*Google Fonts:
-font-family: 'DM Sans', sans-serif;
-font-family: 'Gentium Plus', serif;
-font-family: 'Shadows Into Light', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Gentium+Plus&family=Shadows+Into+Light&display=swap');
+font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto
+font-family: 'Dancing Script', cursive;  --> Para Nosotros y Servicios y Equipo
+font-family: 'DM Serif Text', serif;  -->Título de cada provincia*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=DM+Serif+Text&family=Dancing+Script&display=swap');
 
 /*Body*/
 .body {
@@ -837,6 +837,10 @@ section div .conteiner {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.san__juan {
+  margin: auto;
 }
 
 /*@medias NOA - pantalla mobile*/
