@@ -1,30 +1,12 @@
 @charset "UTF-8";
-/*Importación partials*/ /*Google Fonts:
+/*Importación partials*/ /*Fonts
+Google Fonts:
 font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto: class="font__alegreya"
 font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo class="font__dancing"
 font-family: 'DM Serif Text', serif;  -->Título de cada provincia class="font__dm"
 font-family: 'Assistant', sans-serif; --> textos generales class="font__assistant"*/
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Assistant:wght@200&family=DM+Serif+Text&family=Dancing+Script&display=swap");
-.font__alegreya {
-  font-family: "Alegreya", serif;
-}
-
-.font__dancing {
-  font-family: "Dancing Script", cursive;
-}
-
-.font__dm {
-  font-family: "DM Serif Text", serif;
-}
-
-.font__assistant {
-  font-family: "Assistant", sans-serif;
-}
-
-p {
-  font-family: "Assistant", sans-serif;
-}
-
+/*Colores*/
 /*Index*/
 .conteiner {
   width: 100vw;
@@ -806,6 +788,9 @@ video {
   border-radius: 10%;
 }
 
+/*@medias LITORAL*/
+/*Fin @medias LITORAL*/
+/*Fin Litoral*/
 /*CENTRO*/
 .centro__main {
   background-color: black;
@@ -867,7 +852,7 @@ video {
 }
 /*Fin @medias SUR*/
 /*Fin SUR*/
-/*Main Contacto*/
+/*Contacto*/
 #contacto__portada {
   background-color: #4b134f;
   width: 100%;
@@ -937,12 +922,13 @@ a {
 }
 
 /*Header (general excepto Index*/
-/*#navbar__width {                  
+#navbar__width {
   width: 100vw;
   min-width: 100%;
   padding-right: 0;
   margin-right: 0;
-}*/
+}
+
 /*Fin Header*/
 
 /*# sourceMappingURL=style.css.map */

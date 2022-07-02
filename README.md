@@ -1,11 +1,11 @@
 # turismo-bendahan-gloria
 Desafío de Coderhouse
-<h1 align="center">Hi 👋, I'm Silvana Bendahan Gloria</h1>
+<h2 align="center">Hi 👋, I'm Silvana Bendahan Gloria</h2>
 <h3 align="center">A fresh starter frontend developer from Argentina</h3>
 
 - 🔭 I’m currently working on a challenge for Coderhouse
 
-- 🌱 I’m currently learning **HTML, CSS & GITHUB**
+- 🌱 I’m currently learning **HTML, CSS, SCSS, BOOTSTRAP & GITHUB**
 
 - 📄 I´m Master in Tourism Developement
 

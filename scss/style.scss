@@ -1,5 +1,5 @@
 /*Importación partials*/
-@import 'general/fonts';
+@import 'general/_listas.scss';
 @import 'partes/index';
 @import 'general/footer';
 @import 'partes/_nosotros';
@@ -46,12 +46,12 @@ a {
 }
 
 /*Header (general excepto Index*/
-/*#navbar__width {                  
+  #navbar__width {                  
   width: 100vw;
   min-width: 100%;
   padding-right: 0;
   margin-right: 0;
-}*/
+}
 /*Fin Header*/
 
   
