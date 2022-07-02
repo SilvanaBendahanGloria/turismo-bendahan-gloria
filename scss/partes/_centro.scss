@@ -1,0 +1,20 @@
+/*CENTRO*/
+.centro__main {
+    background-color: black;
+}
+
+/*@medias CENTRO - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+    .centro__main {
+        background-color: white;
+    }
+}
+
+/*@medias CENTRO - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .centro__main {
+        background-color: white;
+    }
+}
+/*Fin @medias CENTRO*/
+/*Fin Centro*/

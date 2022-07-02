@@ -1,0 +1,31 @@
+/*SUR*/
+/*Destacado del mes*/
+.animacion {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: #f7971e;
+    animation-name: animacion_destino;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-duration: 3s;
+    animation-delay: 1s;
+ }
+ 
+ @keyframes animacion_destino {
+     0%{ width: 150px; }
+     0.2%{ width: 180px; }
+     25%{ width: 200px; }
+     50%{ width: 225px;}
+     75%{ width: 200px;}
+     100%{ width: 150px;}
+  }
+ 
+ /*@medias Sur - pantalla mobile*/
+ @media only screen and (max-width: 480px) {
+     .animacion {
+         display: none;
+     }
+ }
+ /*Fin @medias SUR*/
+ /*Fin SUR*/

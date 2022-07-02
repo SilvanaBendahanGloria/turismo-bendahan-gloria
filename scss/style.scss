@@ -1,0 +1,68 @@
+/*Importación partials*/
+@import 'general/fonts';
+@import 'partes/index';
+@import 'general/footer';
+@import 'partes/_nosotros';
+@import 'partes/noa';
+@import 'partes/litoral';
+@import 'partes/centro';
+@import 'partes/sur';
+@import 'partes/contacto';
+
+
+/*Scroll*/
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*Borrar márgenes por default*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Borrar viñeta en listas no ordenadas*/
+ul li {
+    list-style-type: none;
+}
+
+/*Borrar subrayado en links*/
+a { 
+    text-decoration: none;
+}
+
+/*Body*/
+.body {
+    position: relative;
+}
+
+/*Botones*/
+/*Boton de "subir"*/
+.boton {
+    position: sticky;
+    bottom: 1vh;
+}
+
+/*Header (general excepto Index*/
+/*#navbar__width {                  
+  width: 100vw;
+  min-width: 100%;
+  padding-right: 0;
+  margin-right: 0;
+}*/
+/*Fin Header*/
+
+  
+
+
+
+
+
+
+
+
+
+
+

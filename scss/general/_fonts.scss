@@ -1,0 +1,26 @@
+/*Google Fonts:
+font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto: class="font__alegreya"
+font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo class="font__dancing"
+font-family: 'DM Serif Text', serif;  -->Título de cada provincia class="font__dm"
+font-family: 'Assistant', sans-serif; --> textos generales class="font__assistant"*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Assistant:wght@200&family=DM+Serif+Text&family=Dancing+Script&display=swap');
+
+.font__alegreya {
+  font-family: 'Alegreya', serif;
+}
+
+.font__dancing {
+  font-family:'Dancing Script', cursive;
+}
+
+.font__dm {
+  font-family: 'DM Serif Text', serif;
+}
+
+.font__assistant {
+  font-family:'Assistant', sans-serif;
+}
+
+p {
+  font-family: 'Assistant', sans-serif ;
+}

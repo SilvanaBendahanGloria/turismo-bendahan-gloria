@@ -1,0 +1,52 @@
+/*NORTE*/
+.noa__main {
+    background-color: black;
+  }
+  
+  #derecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+  
+  #centrado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .san__juan {
+    margin: auto;
+  }
+  
+  /*@medias NOA - pantalla mobile*/
+  @media only screen and (max-width: 480px) {
+    .noa__main {
+        background-color: white;
+    }
+  
+    #derecha {
+      display: block;
+    }
+  
+    #centrado {
+      display: block;
+    }
+  }
+  
+  /*@medias NOA - para pantalla tablet*/
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .noa__main {
+        background-color: white;
+    }
+  
+    #derecha {
+      display: block;
+    }
+  
+    #centrado {
+      display: block;
+    }
+  }
+  /*Fin @medias NOA*/
+  /*Fin NOA*/
