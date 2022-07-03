@@ -4,7 +4,7 @@ Google Fonts:
 font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto
 font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo
 font-family: 'DM Serif Text', serif;  -->Título de cada provincia
-font-family: 'Assistant', sans-serif; --> textos generales*/
+font-family: 'Assistant', sans-serif; --> textos generales y formulario de contacto*/
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Assistant:wght@200&family=DM+Serif+Text&family=Dancing+Script&display=swap");
 /*4*/
 /*Colores*/
@@ -744,15 +744,15 @@ video {
   display: flex;
   align-items: center;
 }
-
 #contacto__portada h1 {
-  color: white;
+  color: #ffffff;
+  font-family: "Alegreya";
 }
 
 .contacto__main {
-  background: #f7971e; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ffd200, #f7971e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffd200, #f7971e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f7971e;
+  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
+  background: linear-gradient(to right, #ffd200, #f7971e);
 }
 
 .formulario {
@@ -763,7 +763,7 @@ video {
   justify-content: center;
   margin-top: 1%;
   margin-left: 15%;
-  font-family: "Gentium Plus", serif;
+  font-family: cursive;
   color: rebeccapurple;
   font-size: 20px;
 }
