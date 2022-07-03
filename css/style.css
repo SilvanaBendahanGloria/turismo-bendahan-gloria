@@ -614,7 +614,11 @@ p {
 /*Fin Nosotros*/
 /*NORTE*/
 .noa__main {
-  background-color: black;
+  background-color: #111;
+}
+
+.card_title h3 {
+  font-family: "Dancing Script";
 }
 
 #derecha {
@@ -636,7 +640,7 @@ p {
 /*@medias NOA - pantalla mobile*/
 @media only screen and (max-width: 480px) {
   .noa__main {
-    background-color: white;
+    background-color: #ffffff;
   }
   #derecha {
     display: block;
@@ -648,7 +652,7 @@ p {
 /*@medias NOA - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .noa__main {
-    background-color: white;
+    background-color: #ffffff;
   }
   #derecha {
     display: block;

@@ -1,0 +1,56 @@
+/*NORTE*/
+.noa__main {
+    background-color: nth($colors,18);
+}
+
+.card_title h3 {
+  font-family: nth($font,3);
+}
+  
+#derecha {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+  
+#centrado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+  
+.san__juan {
+  margin: auto;
+}
+  
+/*@medias NOA - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+  .noa__main {
+    background-color: nth($colors,1);
+  }
+  
+  #derecha {
+    display: block;
+  }
+  
+  #centrado {
+    display: block;
+  }
+}
+  
+/*@medias NOA - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .noa__main {
+    background-color: nth($colors,1);
+  }
+  
+  #derecha {
+    display: block;
+  }
+  
+  #centrado {
+    display: block;
+  }
+}
+/*Fin @medias NOA*/
+/*Fin NOA*/
