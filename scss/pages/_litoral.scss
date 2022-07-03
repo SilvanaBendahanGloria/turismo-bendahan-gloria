@@ -2,7 +2,7 @@
 .video {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: nth($colors,18);
     padding-top: 5vh;
     padding-bottom: 5vh;
 }

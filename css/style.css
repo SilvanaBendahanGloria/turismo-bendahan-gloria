@@ -667,7 +667,7 @@ p {
 .video {
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #111;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
