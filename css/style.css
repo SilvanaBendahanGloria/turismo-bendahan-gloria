@@ -1,12 +1,14 @@
 @charset "UTF-8";
 /*Importación partials*/ /*Fonts
 Google Fonts:
-font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto: class="font__alegreya"
-font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo class="font__dancing"
-font-family: 'DM Serif Text', serif;  -->Título de cada provincia class="font__dm"
-font-family: 'Assistant', sans-serif; --> textos generales class="font__assistant"*/
+font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto
+font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo
+font-family: 'DM Serif Text', serif;  -->Título de cada provincia
+font-family: 'Assistant', sans-serif; --> textos generales*/
 @import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Assistant:wght@200&family=DM+Serif+Text&family=Dancing+Script&display=swap");
+/*4*/
 /*Colores*/
+/*21*/
 /*Index*/
 .conteiner {
   width: 100vw;
@@ -467,19 +469,22 @@ footer li {
 }
 
 #nosotros__portada h1 {
-  color: white;
+  color: #ffffff;
+  font-family: "Alegreya";
+}
+
+.sub__title {
+  font-family: serif;
+}
+
+p {
+  font-family: cursive;
 }
 
 .nosotros__main {
   background: #f7971e;
   background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
   background: linear-gradient(to right, #ffd200, #f7971e);
-}
-
-.nosotros__main__grid {
-  display: grid;
-  grid-template-rows: 2fr 1fr 2fr;
-  grid-template-columns: 2fr 1fr;
 }
 
 .historia {
@@ -518,7 +523,7 @@ footer li {
   height: 25rem;
   transition: all 2s ease;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   -webkit-backface-visibility: hidden;
@@ -532,11 +537,11 @@ footer li {
 }
 
 .card__side--front {
-  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.7)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
+  background-image: linear-gradient(to right bottom, rgba(30, 11, 54, 0.65), rgba(202, 55, 130, 0.65)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
 }
 
 .card__side--back {
-  background-color: #fff;
+  background-color: #ffffff;
   transform: rotateY(180deg);
 }
 
@@ -559,14 +564,8 @@ footer li {
 }
 
 .card__theme-box {
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 8rem;
-}
-
-.card__title {
-  text-transform: uppercase;
-  font-size: 6rem;
-  font-weight: 100;
 }
 
 .card__cover {
@@ -582,7 +581,7 @@ footer li {
 
 .card__heading {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -595,7 +594,7 @@ footer li {
   font-weight: 300;
   text-transform: uppercase;
   padding: 1rem 1.5rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .card__details {
@@ -608,11 +607,53 @@ footer li {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 37.5em), only screen and (hover: none) {
+/*Fin Hover Historia y Servicios*/
+.servicios {
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+.card__details ul li {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.equipo {
+  margin-top: 18vh;
+  line-height: 10vh;
+  text-align: center;
+}
+
+.equipo h2 {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.equipo p {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+/*@medias para Nosotros - pantalla mobile*/
+@media only screen and (max-width: 480px), only screen and (hover: none) {
+  .card__heading-span {
+    font-size: 1.5rem;
+  }
+  .card__side--front {
+    display: none;
+  }
+  .equipo h2 {
+    font-size: 30px;
+  }
   .card {
     height: auto;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
   }
   .card__side {
@@ -647,79 +688,69 @@ footer li {
   .card__title {
     font-size: 4rem;
   }
-} /*Fin Hover Historia y Servicios*/
-.servicios {
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-}
-
-.card__details ul li {
-  list-style-type: square;
-  list-style-position: inside;
-}
-
-.equipo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 4;
-  justify-self: end;
-  padding: 20px;
-  text-align: center;
-  margin-top: 8vh;
-}
-
-.equipo h2 {
-  font-size: 35px;
-  margin-top: 10px;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.equipo p {
-  font-size: 20px;
-  font-style: italic;
-  margin-bottom: 50px;
-  color: white;
-}
-
-/*@medias para Nosotros - pantalla mobile*/
-@media only screen and (max-width: 480px) {
-  .nosotros__main__grid {
+  .equipo {
     display: block;
+  }
+  .img__equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+/*@medias NOSOTROS - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px), only screen and (hover: none) {
+  .card__heading-span {
+    font-size: 1.5rem;
   }
   .card__side--front {
     display: none;
-  }
-  .card__heading-span {
-    font-size: 1.5rem;
   }
   .equipo h2 {
     font-size: 30px;
   }
-}
-/*@medias Nosotros - para pantalla tablet*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .nosotros__main__grid {
-    display: block;
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
+  }
+  .card__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
   }
   .card__side--front {
-    display: none;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   }
-}
-/*@medias Nosotros - pantallas grandes*/
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .nosotros__main__grid {
+  .card__side--back {
+    transform: rotateY(0);
+  }
+  .card:hover .card__side--front {
+    transform: rotateY(0);
+  }
+  .card__details {
+    padding: 3rem 2rem;
+  }
+  .card__theme {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    padding: 5rem 4rem 1.5rem 4rem;
+    text-align: right;
+  }
+  .card__theme-box {
+    margin-bottom: 1.5rem;
+  }
+  .card__title {
+    font-size: 4rem;
+  }
+  .equipo {
     display: block;
   }
-  .card__side--front {
-    display: none;
-  }
-  .card__heading-span {
-    font-size: 1.5rem;
-  }
-  .equipo .imagenes__verticales {
+  .img__equipo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
