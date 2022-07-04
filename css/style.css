@@ -681,19 +681,19 @@ video {
 /*Fin Litoral*/
 /*CENTRO*/
 .centro__main {
-  background-color: black;
+  background-color: #111;
 }
 
 /*@medias CENTRO - pantalla mobile*/
 @media only screen and (max-width: 480px) {
   .centro__main {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 /*@medias CENTRO - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .centro__main {
-    background-color: white;
+    background-color: #ffffff;
   }
 }
 /*Fin @medias CENTRO*/
