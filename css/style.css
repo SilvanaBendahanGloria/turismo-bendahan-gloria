@@ -403,7 +403,7 @@ footer .enlace:hover:after {
 }
 
 p {
-  font-family: cursive;
+  font-family: cursive; /*No es esta la letra!!!!*/
 }
 
 .nosotros__main {
