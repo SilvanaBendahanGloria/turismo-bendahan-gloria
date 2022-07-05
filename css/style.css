@@ -772,6 +772,11 @@ video {
   font-size: 20px;
 }
 
+input::placeholder {
+  color: rgb(224, 220, 220);
+  font-style: italic;
+}
+
 /*No @media needed :)*/
 /*Fin Contacto*/
 /*Scroll*/
