@@ -396,6 +396,7 @@ footer .enlace:hover:after {
 #nosotros__portada h1 {
   color: #ffffff;
   font-family: "Alegreya";
+  margin-left: 1vw;
 }
 
 .sub__title {
@@ -751,6 +752,7 @@ video {
 #contacto__portada h1 {
   color: #ffffff;
   font-family: "Alegreya";
+  margin-left: 1vw;
 }
 
 .contacto__main {

@@ -9,7 +9,8 @@
     h1 {
       color: nth($colors,1);
       font-family: nth($font,1);
-}
+      margin-left: 1vw;
+    }
 }
 
 .contacto__main {
