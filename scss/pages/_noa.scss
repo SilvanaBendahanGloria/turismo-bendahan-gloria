@@ -8,15 +8,11 @@
 }
   
 #derecha {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+  @include flex (flex, row, wrap, end);
 }
   
 #centrado {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  @include flex (flex, row, wrap, center);
 }
   
 .san__juan {

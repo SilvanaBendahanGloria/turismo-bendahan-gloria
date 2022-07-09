@@ -41,10 +41,8 @@ p {
 
 /*Hover de Historia y Servicios*/
 .artboard {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
+  @include flex(flex, row, wrap, center);
+  align-items: center;  
   padding: 4rem;
   height: 20%;
   position: relative;
@@ -243,10 +241,7 @@ p {
     }
 
     .img__equipo {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      @include flex(flex, row, wrap, space-evenly);
     }
   } 
 }

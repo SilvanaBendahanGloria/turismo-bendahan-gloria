@@ -23,10 +23,7 @@
 
 .formulario {
     width: 75vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include flex(flex, column, wrap, center);
     margin-top: 1%;
     margin-left: 15%;
     font-family: nth($font,4);

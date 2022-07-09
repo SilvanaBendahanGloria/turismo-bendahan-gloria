@@ -474,9 +474,10 @@ p {
 /*Hover de Historia y Servicios*/
 .artboard {
   display: flex;
-  flex-flow: row;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   padding: 4rem;
   height: 20%;
   position: relative;
@@ -673,12 +674,14 @@ p {
 #derecha {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: end;
 }
 
 #centrado {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
