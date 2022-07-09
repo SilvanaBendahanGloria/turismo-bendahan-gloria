@@ -26,7 +26,7 @@
 /*@medias NOA - pantalla mobile*/
 @media only screen and (max-width: 480px) {
   .noa__main {
-    background-color: nth($colors,1);
+    background-color: map-get($screen_not_lg, bg_not_lg);
   }
   
   #derecha {
@@ -41,7 +41,7 @@
 /*@medias NOA - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .noa__main {
-    background-color: nth($colors,1);
+    background-color: map-get($screen_not_lg, bg_not_lg);
   }
   
   #derecha {

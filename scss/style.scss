@@ -1,68 +1,13 @@
 /*Importación partials*/
-@import 'general/listas';
+@import 'components/reset';
+@import 'components/listas';
+@import 'components/maps';
 @import 'pages/index';
-@import 'general/footer';
+@import 'components/header';
+@import 'components/footer';
 @import 'pages/nosotros';
 @import 'pages/noa';
 @import 'pages/litoral';
 @import 'pages/centro';
 @import 'pages/sur';
 @import 'pages/contacto';
-
-
-/*Scroll*/
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-/*Borrar márgenes por default*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Borrar viñeta en listas no ordenadas*/
-ul li {
-    list-style-type: none;
-}
-
-/*Borrar subrayado en links*/
-a { 
-    text-decoration: none;
-}
-
-/*Body*/
-.body {
-    position: relative;
-}
-
-/*Botones*/
-/*Boton de "subir"*/
-.boton {
-    position: sticky;
-    bottom: 1vh;
-}
-
-/*Header (general excepto Index*/
-  #navbar__width {                  
-  width: 100vw;
-  min-width: 100%;
-  padding-right: 0;
-  margin-right: 0;
-}
-/*Fin Header*/
-
-  
-
-
-
-
-
-
-
-
-
-
-
