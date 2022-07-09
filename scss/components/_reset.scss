@@ -32,5 +32,9 @@ html {
 .boton {
     position: sticky;
     bottom: 1vh;
+
+    a:hover {
+        border-color:lighten($color: red, $amount: 20%);
+    }
 }
 

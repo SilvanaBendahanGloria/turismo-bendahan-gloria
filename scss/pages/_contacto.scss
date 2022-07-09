@@ -1,16 +1,10 @@
 /*Contacto*/
 #contacto__portada {
-    background-color: nth($colors,16) ;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    
-    h1 {
-      color: nth($colors,1);
-      font-family: nth($font,1);
-      margin-left: 1vw;
-    }
+  @extend %portada;
+
+  h1 {
+    @extend %titulo_portada;
+  }
 }
 
 .contacto__main {
