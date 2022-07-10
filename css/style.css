@@ -28,16 +28,6 @@ html {
   position: relative;
 }
 
-/*Botones*/
-/*Boton de "subir"*/
-.boton {
-  position: sticky;
-  bottom: 1vh;
-}
-.boton a:hover {
-  border-color: #ff6666;
-}
-
 /*Fonts
 Google Fonts:
 font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto
@@ -81,196 +71,16 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   color: black;
 }
 
-/*Index*/
-.conteiner {
-  width: 100vw;
-  min-width: 100%;
+/*Botones*/
+/*Boton de "subir"*/
+.boton {
+  position: sticky;
+  bottom: 1vh;
+}
+.boton a:hover {
+  border-color: #ff6666;
 }
 
-section div .conteiner {
-  width: 100vw;
-  min-width: 100%;
-  height: 100vh;
-  min-height: 100%;
-}
-
-.body__index {
-  font-family: "Playfair Display", serif;
-  font-size: 50%;
-  overflow-x: hidden;
-}
-
-#color__menu {
-  width: 100vw;
-  min-width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  margin-left: 0;
-  padding-left: 0;
-  position: relative;
-  background: #f7971e;
-  background: -webkit-linear-gradient(to right, #ffd200, #f7971e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffd200, #f7971e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.menu_overlay {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  overflow: hidden;
-  color: #ffffff;
-  background: #c94b4b;
-  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
-  background: linear-gradient(to right, #4b134f, #c94b4b);
-  z-index: 100;
-  transform: translateX(110%);
-  transition: transform 0.5s ease;
-}
-.menu_overlay .fas {
-  position: absolute;
-  right: 40px;
-  top: 20px;
-  font-size: 1.5 rem;
-  transition: all 0.3s ease;
-}
-.menu_overlay .fas:hover {
-  color: #4b134f;
-  transform: scale(1.1) rotate(180deg);
-}
-.menu_overlay ul {
-  height: 100%;
-  width: 100%;
-  list-style: none;
-  padding: 20px;
-  margin-left: 100px;
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.menu_overlay ul a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.menu_overlay ul a:hover {
-  color: #c6df3c;
-}
-
-.regiones {
-  margin-left: 120px;
-}
-
-#menuBtn {
-  display: none;
-}
-#menuBtn:checked ~ .menu_overlay {
-  transform: translateX(0);
-}
-
-.landing_page {
-  max-height: 100vh;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.landing_page .menu {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-
-.fas {
-  font-size: 2rem;
-  color: #222;
-}
-.fas:hover {
-  color: #4b134f;
-}
-
-.main_text {
-  color: #c94b4b;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 1px #111;
-  display: flex;
-  flex-direction: column;
-}
-.main_text .h2-r,
-.main_text .h2-l {
-  font-size: 6rem;
-}
-.main_text .h2-r {
-  transform: rotate(0deg);
-  margin-left: -100px;
-  z-index: 100;
-}
-.main_text .h2-l {
-  margin-left: 100px;
-  background-color: #4b134f;
-  padding: 20px;
-  z-index: 0;
-}
-
-.side_text {
-  height: 10vh;
-  width: 60%;
-  color: #c94b4b;
-  position: absolute;
-  left: 0px;
-  bottom: 20px;
-  text-shadow: 0 0 1px #111;
-  padding: 10px;
-  font-size: 16px;
-  color: #4b134f;
-}
-
-/*@medias para el Index - pantalla mobile*/
-@media screen and (max-width: 480px) {
-  .h2-r,
-.h2-l {
-    font-size: 3rem;
-    margin-left: 0;
-  }
-  .menu_overlay ul {
-    margin-left: 0px;
-    text-align: right;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .regiones {
-    margin-left: -10px;
-    line-height: 45px;
-  }
-}
-/*@medias para Index - pantalla tablet*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .list a {
-    font-size: 2rem;
-  }
-  .h2-r {
-    font-size: 4rem;
-    margin-left: -50px;
-  }
-  .h2-l {
-    font-size: 4rem;
-    margin-left: 0;
-  }
-  .menu_overlay ul {
-    margin-left: 0px;
-    text-align: right;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .regiones {
-    margin-left: -10px;
-    line-height: 45px;
-  }
-}
-/*Fin @medias index*/
-/*Fin Index*/
 /*Header (general excepto Index*/
 #navbar__width {
   width: 100vw;
@@ -466,6 +276,196 @@ footer .enlace:hover:after {
 }
 /*Fin @medias Footer*/
 /*Fin Footer*/
+/*Index*/
+.conteiner {
+  width: 100vw;
+  min-width: 100%;
+}
+
+section div .conteiner {
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+}
+
+.body__index {
+  font-family: "Playfair Display", serif;
+  font-size: 50%;
+  overflow-x: hidden;
+}
+
+#color__menu {
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+  background: #f7971e;
+  background: -webkit-linear-gradient(to right, #ffd200, #f7971e); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffd200, #f7971e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menu_overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: #ffffff;
+  background: #c94b4b;
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  background: linear-gradient(to right, #4b134f, #c94b4b);
+  z-index: 100;
+  transform: translateX(110%);
+  transition: transform 0.5s ease;
+}
+.menu_overlay .fas {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  font-size: 1.5 rem;
+  transition: all 0.3s ease;
+}
+.menu_overlay .fas:hover {
+  color: #4b134f;
+  transform: scale(1.1) rotate(180deg);
+}
+.menu_overlay ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  margin-left: 100px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu_overlay ul a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu_overlay ul a:hover {
+  color: #c6df3c;
+}
+
+.regiones {
+  margin-left: 120px;
+}
+
+#menuBtn {
+  display: none;
+}
+#menuBtn:checked ~ .menu_overlay {
+  transform: translateX(0);
+}
+
+.landing_page {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.landing_page .menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.fas {
+  font-size: 2rem;
+  color: #222;
+}
+.fas:hover {
+  color: #4b134f;
+}
+
+.main_text {
+  color: #c94b4b;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 1px #111;
+  display: flex;
+  flex-direction: column;
+}
+.main_text .h2-r,
+.main_text .h2-l {
+  font-size: 6rem;
+}
+.main_text .h2-r {
+  transform: rotate(0deg);
+  margin-left: -100px;
+  z-index: 100;
+}
+.main_text .h2-l {
+  margin-left: 100px;
+  background-color: #4b134f;
+  padding: 20px;
+  z-index: 0;
+}
+
+.side_text {
+  height: 10vh;
+  width: 60%;
+  color: #c94b4b;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  text-shadow: 0 0 1px #111;
+  padding: 10px;
+  font-size: 16px;
+  color: #4b134f;
+}
+
+/*@medias para el Index - pantalla mobile*/
+@media screen and (max-width: 480px) {
+  .h2-r,
+.h2-l {
+    font-size: 3rem;
+    margin-left: 0;
+  }
+  .menu_overlay ul {
+    margin-left: 0px;
+    text-align: right;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .regiones {
+    margin-left: -10px;
+    line-height: 45px;
+  }
+}
+/*@medias para Index - pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .list a {
+    font-size: 2rem;
+  }
+  .h2-r {
+    font-size: 4rem;
+    margin-left: -50px;
+  }
+  .h2-l {
+    font-size: 4rem;
+    margin-left: 0;
+  }
+  .menu_overlay ul {
+    margin-left: 0px;
+    text-align: right;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .regiones {
+    margin-left: -10px;
+    line-height: 45px;
+  }
+}
+/*Fin @medias index*/
+/*Fin Index*/
 /*Nosotros*/
 .sub__title {
   font-family: "Dancing Script";
@@ -719,6 +719,9 @@ footer .enlace:hover:after {
   #centrado {
     display: block;
   }
+  .parrafo__sanjuan {
+    background-color: none;
+  }
 }
 /*@medias NOA - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -730,6 +733,9 @@ footer .enlace:hover:after {
   }
   #centrado {
     display: block;
+  }
+  .parrafo__sanjuan {
+    background-color: none;
   }
 }
 /*Fin @medias NOA*/
