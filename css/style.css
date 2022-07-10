@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Importación partials*/ /*Borrar márgenes por default*/
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Assistant:wght@200&family=DM+Serif+Text&family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=DM+Serif+Text&family=Dancing+Script&family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ Google Fonts:
 font-family: 'Alegreya', serif; -->Para Quienes Somos y Contacto
 font-family: 'Dancing Script', cursive;  --> Para Nosotros, Servicios y Equipo
 font-family: 'DM Serif Text', serif;  -->Título de cada provincia
-font-family: 'Assistant', sans-serif; --> textos generales y formulario de contacto*/
+font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
 /*4*/
 /*Colores*/
 /*21*/
@@ -59,6 +59,26 @@ font-family: 'Assistant', sans-serif; --> textos generales y formulario de conta
   color: #ffffff;
   font-family: "Alegreya";
   margin-left: 1vw;
+}
+
+.titulo_carrusel { /*Para todos los carruseles*/
+  font-size: 30px;
+}
+
+.titulo_cards { /*Para todos los cards de provincias*/
+  font-family: "DM Serif Text";
+  font-size: 35px;
+}
+
+.titulo_ofertas { /*Para todas las ofertas*/
+  font-family: "DM Serif Text";
+  font-size: 20px;
+}
+
+.parrafo { /*Para todos los párrafos*/
+  font-family: "Lato";
+  font-size: 20px;
+  color: black;
 }
 
 /*Index*/
@@ -448,11 +468,7 @@ footer .enlace:hover:after {
 /*Fin Footer*/
 /*Nosotros*/
 .sub__title {
-  font-family: serif;
-}
-
-p {
-  font-family: cursive; /*No es esta la letra!!!!*/
+  font-family: "Dancing Script";
 }
 
 .nosotros__main {
@@ -667,10 +683,6 @@ p {
   background-color: #111;
 }
 
-.card_title h3 {
-  font-family: "Dancing Script";
-}
-
 #derecha {
   display: flex;
   flex-direction: row;
@@ -687,6 +699,13 @@ p {
 
 .san__juan {
   margin: auto;
+}
+
+.parrafo__sanjuan {
+  font-family: "Lato";
+  font-size: 20px;
+  color: black;
+  background-color: #ffffff;
 }
 
 /*@medias NOA - pantalla mobile*/
@@ -807,7 +826,7 @@ video {
   justify-content: center;
   margin-top: 1%;
   margin-left: 15%;
-  font-family: cursive;
+  font-family: "Lato";
   color: rebeccapurple;
   font-size: 20px;
 }

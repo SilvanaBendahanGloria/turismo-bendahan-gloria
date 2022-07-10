@@ -1,10 +1,6 @@
 /*NORTE*/
 .noa__main {
-    background-color: nth($colors,18);
-}
-
-.card_title h3 {
-  font-family: nth($font,3);
+  background-color: nth($colors,18);
 }
   
 #derecha {
@@ -19,6 +15,13 @@
   margin: auto;
 }
   
+.parrafo__sanjuan {
+  font-family: nth($font,4); 
+  font-size: 20px;
+  color: black;
+  background-color: nth($colors,1);
+}
+
 /*@medias NOA - pantalla mobile*/
 @media only screen and (max-width: 480px) {
   .noa__main {

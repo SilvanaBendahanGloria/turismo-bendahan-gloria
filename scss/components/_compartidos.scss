@@ -1,0 +1,21 @@
+
+.titulo_carrusel { /*Para todos los carruseles*/
+    font-size: 30px;
+}
+  
+.titulo_cards { /*Para todos los cards de provincias*/
+    font-family: nth($font,3);
+    font-size: 35px;
+}
+  
+.titulo_ofertas { /*Para todas las ofertas*/
+    font-family: nth($font,3);
+    font-size: 20px;
+}
+
+.parrafo { /*Para todos los párrafos*/
+    font-family: nth($font,4); 
+    font-size: 20px;
+    color: black;
+}
+  

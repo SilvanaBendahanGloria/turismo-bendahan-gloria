@@ -11,10 +11,6 @@
   font-family: nth($font,2);
 }
 
-p {
-  font-family: nth($font,4); /*No es esta la letra!!!!*/
-}
-
 .nosotros__main {
     background:  nth($colors,13);
     background: -webkit-linear-gradient(
