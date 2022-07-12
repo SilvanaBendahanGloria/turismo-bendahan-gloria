@@ -41,9 +41,10 @@
 .boton {
     position: sticky;
     bottom: 1vh;
-
-    a:hover {
-        border-color:lighten($color: red, $amount: 20%);
+    
+    a {
+        border-color: nth($colors,16);
+        background-color: nth($colors,1);
     }
 }
 

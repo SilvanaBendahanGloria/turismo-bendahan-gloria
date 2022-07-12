@@ -93,16 +93,17 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   position: sticky;
   bottom: 1vh;
 }
-.boton a:hover {
-  border-color: #ff6666;
+.boton a {
+  border-color: #4b134f;
+  background-color: #ffffff;
 }
 
 /*Header (general excepto Index*/
 #navbar__width {
   width: 100vw;
   min-width: 100%;
-  padding-right: 0;
-  margin-right: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /*Fin Header*/
@@ -681,7 +682,7 @@ section div .conteiner {
     justify-content: space-evenly;
   }
 }
-/*@medias para Index - pantalla tablet*/
+/*@medias para NOSOTROS - pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .card {
     margin-left: 0vw;
@@ -797,6 +798,10 @@ video {
 /*Fin @medias CENTRO*/
 /*Fin Centro*/
 /*SUR*/
+.cards__sur {
+  margin-left: 10vw;
+}
+
 /*Destacado del mes*/
 .animacion {
   width: 100px;
@@ -829,8 +834,23 @@ video {
 }
 /*@medias Sur - pantalla mobile*/
 @media only screen and (max-width: 480px) {
+  .cards__sur {
+    margin-left: 15vw;
+  }
+  .cards__sur__centrado {
+    margin-left: 10vw;
+  }
   .animacion {
     display: none;
+  }
+}
+/*@medias SUR - pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .cards__sur {
+    margin-left: 15vw;
+  }
+  .cards__sur__centrado {
+    margin-left: 0vw;
   }
 }
 /*Fin @medias SUR*/
