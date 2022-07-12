@@ -30,7 +30,13 @@
     color: black;
 }
 
-/*Botones*/
+@media only screen and (max-width: 768px) {
+    .parrafo {
+        font-size: 15px;
+    }
+}
+
+/*Botones*/ 
 /*Boton de "subir"*/
 .boton {
     position: sticky;
