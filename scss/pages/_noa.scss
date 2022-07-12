@@ -3,13 +3,13 @@
   background-color: nth($colors,18);
 }
   
-#derecha {
+/*#derecha {
   @include flex (flex, row, wrap, end);
 }
   
 #centrado {
   @include flex (flex, row, wrap, center);
-}
+}*/
   
 .san__juan {
   margin: auto;
@@ -28,13 +28,13 @@
     background-color: map-get($screen_not_lg, bg_not_lg);
   }
   
-  #derecha {
+ /* #derecha {
     display: block;
   }
   
   #centrado {
     display: block;
-  }
+  }*/
 
   .parrafo__sanjuan {
     background-color: none;
@@ -47,13 +47,13 @@
     background-color: map-get($screen_not_lg, bg_not_lg);
   }
   
-  #derecha {
+ /* #derecha {
     display: block;
   }
   
   #centrado {
     display: block;
-  }
+  }*/
 
   .parrafo__sanjuan {
     background-color: none;

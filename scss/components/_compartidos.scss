@@ -7,7 +7,18 @@
     font-family: nth($font,3);
     font-size: 35px;
 }
-  
+
+.ofertas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color: green;
+    padding: 25px;
+}
+
 .titulo_ofertas { /*Para todas las ofertas*/
     font-family: nth($font,3);
     font-size: 20px;

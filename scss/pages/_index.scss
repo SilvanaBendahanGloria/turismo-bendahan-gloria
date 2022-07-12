@@ -74,7 +74,7 @@ section div .conteiner {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items:flex-start;
     
     a {
       color: nth($colors,1);
@@ -88,7 +88,7 @@ section div .conteiner {
 }
    
 .regiones { 
-  margin-left: 120px;
+  margin-left: 0px;
 }
     
 #menuBtn {
@@ -126,28 +126,38 @@ section div .conteiner {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
   text-shadow: 0 0 1px nth($colors,18);
   display: flex;
   flex-direction: column;
-  
-  .h2-r,
-  .h2-l {
-    font-size: 6rem;
-  }
-    
-  .h2-r {
-    transform: rotate(0deg);
-    margin-left: -100px;
-    z-index: 100;
-  }
-  
-  .h2-l {
-    margin-left: 100px;
-    background-color: nth($colors,16);
-    padding: 20px;
-    z-index: 0;
-  }
+}
+
+.main_text {
+  color: #c94b4b;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 1px #111;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2-r,
+.h2-l {
+  font-size: 4rem;
+}
+
+.h2-r {
+  transform: rotate(-10deg);
+  margin-left: 50px;
+  z-index: 100;
+}
+
+.h2-l {
+  margin-left: 100px;
+  background-color: #4b134f;
+  padding: 20px;
+  z-index: 0;
 }
 
 .side_text {
@@ -167,8 +177,11 @@ section div .conteiner {
 @media screen and (max-width: 480px) {
   .h2-r,
   .h2-l {
-    font-size: 3rem;
-    margin-left: 0;
+    font-size: 2.5rem;
+  }
+
+  .h2-r {
+    transform: rotate(0deg);
   }
   
   .menu_overlay ul {
@@ -188,16 +201,6 @@ section div .conteiner {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .list a {
     font-size: 2rem; 
-  }
-  
-  .h2-r {
-    font-size: 4rem;
-    margin-left:-50px;
-}
-
-  .h2-l {
-    font-size: 4rem;
-     margin-left: 0;
   }
   
   .menu_overlay ul {
