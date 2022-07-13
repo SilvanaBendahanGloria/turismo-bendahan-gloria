@@ -840,6 +840,30 @@ section div .conteiner {
 /*Fin @medias NOA*/
 /*Fin NOA*/
 /*LITORAL*/
+.backg_1 {
+  background-color: #155E54;
+}
+
+.backg_2 {
+  background-color: #ff7800;
+}
+
+.backg_3 {
+  background-color: rebeccapurple;
+}
+
+.backg_4 {
+  background-color: #c6df3c;
+}
+
+.backg_5 {
+  background-color: #3b5998;
+}
+
+.backg_6 {
+  background-color: #c94b4b;
+}
+
 .video {
   display: flex;
   justify-content: center;

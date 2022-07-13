@@ -1,4 +1,28 @@
 /*LITORAL*/
+.backg_1 {
+    background-color: nth($colors,5);
+}
+
+.backg_2 {
+    background-color: nth($colors,8);
+}
+
+.backg_3 {
+    background-color: nth($colors,21);
+}
+
+.backg_4 {
+    background-color: nth($colors,17);
+}
+
+.backg_5 {
+    background-color: nth($colors,3);
+}
+
+.backg_6 {
+    background-color: nth($colors,15);
+}
+
 .video {
     display: flex;
     justify-content: center;
