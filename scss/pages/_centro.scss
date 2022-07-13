@@ -1,28 +1,90 @@
 /*CENTRO*/
-.centro__main {
-    background-color:nth($colors,18);
+
+$yellow: #eac435;
+$pink: #e40066;
+$green: #03cea4;
+
+.flexing {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
 }
 
-.cards__horizontales {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+.section {
+  flex: 1;
+  position: relative;
+  transition: 0.5s ease;
+
+  &--yellow {
+    background-color: nth($colors,13);
+  }
+
+  &--pink {
+    background-color: nth($colors,20);
+  }
+
+  &--green {
+    background-color: nth($colors,5);
+  }
+
+  &--orange {
+    background-color: nth($colors,8);
+  }
+
+  &--grey {
+    background-color: nth($colors,9);
+  }
+
+  &--blue {
+    background-color: nth($colors,3);
+  } 
+
+  &:hover, &:active, &:focus {
+    flex: 3;
+
+    .title {
+      transform: translate(-50%, -50%) rotate(0);
+      
+      @media screen and (min-width: 1000px) {
+        transform: translate(-50%, -50%) scale(1.25);
+      }
+    }
+  }
+
+  .title {
+    font-family: "Fredoka One";
+    font-size: 5rem;
+    left: 50%;
+    margin: 0;  
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+
+    a {
+        text-decoration: none;
+        color: nth($colors, 18);
+    }
+
+    @media screen and (min-width: 1000px) {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
 }
 
 /*@medias CENTRO - pantalla mobile*/
 @media only screen and (max-width: 480px) {
-    .centro__main {
-        background-color: map-get($screen_not_lg, bg_not_lg);
-    }
+    
 }
 
 /*@medias CENTRO - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .centro__main {
-        background-color: map-get($screen_not_lg, bg_not_lg);
-    }
+
 }
+
 /*Fin @medias CENTRO*/
 /*Fin Centro*/
