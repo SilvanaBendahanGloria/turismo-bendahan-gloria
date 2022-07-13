@@ -1,9 +1,4 @@
 /*CENTRO*/
-
-$yellow: #eac435;
-$pink: #e40066;
-$green: #03cea4;
-
 .flexing {
   display: flex;
   flex-direction: column;
@@ -66,8 +61,7 @@ $green: #03cea4;
     transition: 0.5s ease;
 
     a {
-        text-decoration: none;
-        color: nth($colors, 18);
+      color: nth($colors, 18);
     }
 
     @media screen and (min-width: 1000px) {
