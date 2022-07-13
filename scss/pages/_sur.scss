@@ -1,7 +1,4 @@
 /*SUR*/
-.cards__sur {
-    margin-left: 10vw;
-}
 /*Destacado del mes*/
 .animacion {
     width: 100px;
@@ -22,31 +19,12 @@
     75%{ width: 200px;}
     100%{ width: 150px;}
 }
- 
+
 /*@medias Sur - pantalla mobile*/
 @media only screen and (max-width: 480px) {
-    .cards__sur {
-        margin-left: 15vw;
-    }
-
-    .cards__sur__centrado {
-        margin-left: 10vw;
-    }
-
     .animacion {
         display: none;
     }
-}
-
-/*@medias SUR - pantalla tablet*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .cards__sur {
-        margin-left: 15vw;
-    }
-
-    .cards__sur__centrado {
-        margin-left: 0vw;
-    } 
 }
 /*Fin @medias SUR*/
 /*Fin SUR*/

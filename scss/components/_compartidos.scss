@@ -1,3 +1,6 @@
+.conteiner__doble { /*Para margen superior en cards*/
+    margin-top: 5vh;
+}
 
 .titulo_carrusel { /*Para todos los carruseles*/
     font-size: 30px;
@@ -6,22 +9,6 @@
 .titulo_cards { /*Para todos los cards de provincias*/
     font-family: nth($font,3);
     font-size: 35px;
-}
-
-.ofertas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    justify-self: center;
-    align-items: center;
-    background-color: green;
-    padding: 25px;
-}
-
-.titulo_ofertas { /*Para todas las ofertas*/
-    font-family: nth($font,3);
-    font-size: 20px;
 }
 
 .parrafo { /*Para todos los párrafos*/
@@ -33,6 +20,25 @@
 @media only screen and (max-width: 768px) {
     .parrafo {
         font-size: 15px;
+    }
+}
+
+.titulo_ofertas__grey { /*Para ofertas sur y litoral*/
+    font-family: nth($font,3);
+    font-size: 2rem;
+}
+
+.ofertas__grey { /*Para ofertas sur y litoral*/
+    @include flex(flex, row, wrap, space-evenly);    
+    align-items:center;
+    background-color: nth($colors,11);
+    padding: 25px;
+    color: nth($colors,1);
+    width: 100vw;
+
+    img {
+        padding-top: 5px;
+        width: 90%;
     }
 }
 

@@ -51,7 +51,7 @@
   }
 }
   
-.card {
+.nosotros__card {
   flex: initial;
   position: relative;
   height: 35rem; 
@@ -60,16 +60,16 @@
   perspective: 200rem;
   margin: 2rem;
 
-    &:hover .card__side--back {
+    &:hover .nosotros__card__side--back {
       transform: rotateY(0);
     }
 
-    &:hover .card__side--front {
+    &:hover .nosotros__card__side--front {
       transform: rotateY(-180deg);
     }
 }
 
-.card__side {
+.nosotros__card__side {
   height: 35rem;
   transition: all 2s ease;
   position: absolute;
@@ -83,16 +83,16 @@
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 }
 
-.card__side--front {
+.nosotros__card__side--front {
   background-image: linear-gradient(to right bottom,  nth($colors,19), nth($colors,20)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
 }
 
-.card__side--back {
+.nosotros__card__side--back {
   background-color:  nth($colors,1);
   transform: rotateY(180deg);
 }
 
-.card__theme {
+.nosotros__card__theme {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,13 +101,13 @@
   width: 90%;
   text-align: center;
     
-    .card__theme-box {
+    .nosotros__card__theme-box {
     color:  nth($colors,1);
     margin-bottom: 8rem;
     }
 }
 
-.card__cover {
+.nosotros__card__cover {
   position: relative;
   background-size: cover;
   height: 6rem;
@@ -117,7 +117,7 @@
   border-top-right-radius: 3px;
   background-image: linear-gradient(to top right, nth($colors,19), nth($colors,20)), url(https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg);
   
-    .card__heading {
+    .nosotros__card__heading {
       text-align: center;
       color: nth($colors,1);
       position: absolute;
@@ -126,7 +126,7 @@
       transform: translate(-50%, -50%);
       width: 75%;
       
-        .card__heading-span {
+        .nosotros__card__heading-span {
         font-size: 2.2rem;
         font-weight: 300;
         padding: 1rem 1.5rem;
@@ -135,7 +135,7 @@
     }
 }
 
-.card__details {
+.nosotros__card__details {
   padding: 1rem 2rem;
   
     ul {
@@ -174,7 +174,7 @@
 
 /*@medias NOSOTROS - para pantalla mobile*/
 @media screen and (max-width: 480px) { 
-  .card {
+  .nosotros__card {
     height: auto;
     border-radius: 3px;
     background-color: nth($colors,1);
@@ -183,22 +183,22 @@
     margin-left: -10vw;
   }
 
-  .card__side {
+  .nosotros__card__side {
     height: auto;
     position: relative;
     box-shadow: none;
   }
 
-  .card__side--back {
+  .nosotros__card__side--back {
     transform: rotateY(0);
     width: 80vw;
   } 
 
-  .card__side--front {
+  .nosotros__card__side--front {
     display: none;
   }
 
-  .card__details {
+  .nosotros__card__details {
     padding: 0rem 1rem;
 
     ul {
@@ -223,16 +223,16 @@
 
 /*@medias para NOSOTROS - pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .card {
+  .nosotros__card {
     margin-left: 0vw;
     height: 60vh;
   }
 
-  .card__side {
+  .nosotros__card__side {
     height: 60vh;
   }
 
-  .card__details {
+  .nosotros__card__details {
     ul {
       li {
         font-size: 20px;
