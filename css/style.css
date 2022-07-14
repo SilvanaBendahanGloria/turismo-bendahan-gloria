@@ -99,12 +99,12 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   background-color: #c94b4b;
 }
 
-.titulo_ofertas__grey { /*Para ofertas sur y litoral*/
+.titulo__ofertas__grey {
   font-family: "DM Serif Text";
   font-size: 2rem;
 }
 
-.ofertas__grey { /*Para ofertas sur y litoral*/
+.ofertas__grey {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

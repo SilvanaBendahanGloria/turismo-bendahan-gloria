@@ -47,12 +47,12 @@
     background-color: nth($colors,15);
 }
 
-.titulo_ofertas__grey { /*Para ofertas sur y litoral*/
+.titulo__ofertas__grey { 
     font-family: nth($font,3);
     font-size: 2rem;
 }
 
-.ofertas__grey { /*Para ofertas sur y litoral*/
+.ofertas__grey { 
     @include flex(flex, row, wrap, space-evenly);    
     align-items:center;
     background-color: nth($colors,11);
