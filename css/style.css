@@ -75,6 +75,30 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
     font-size: 15px;
   }
 }
+.backg_1 {
+  background-color: #155E54;
+}
+
+.backg_2 {
+  background-color: #ff7800;
+}
+
+.backg_3 {
+  background-color: rebeccapurple;
+}
+
+.backg_4 {
+  background-color: #c6df3c;
+}
+
+.backg_5 {
+  background-color: #3b5998;
+}
+
+.backg_6 {
+  background-color: #c94b4b;
+}
+
 .titulo_ofertas__grey { /*Para ofertas sur y litoral*/
   font-family: "DM Serif Text";
   font-size: 2rem;
@@ -840,30 +864,6 @@ section div .conteiner {
 /*Fin @medias NOA*/
 /*Fin NOA*/
 /*LITORAL*/
-.backg_1 {
-  background-color: #155E54;
-}
-
-.backg_2 {
-  background-color: #ff7800;
-}
-
-.backg_3 {
-  background-color: rebeccapurple;
-}
-
-.backg_4 {
-  background-color: #c6df3c;
-}
-
-.backg_5 {
-  background-color: #3b5998;
-}
-
-.backg_6 {
-  background-color: #c94b4b;
-}
-
 .video {
   display: flex;
   justify-content: center;
@@ -963,15 +963,13 @@ video {
 
 .sur__hero-section {
   align-items: flex-start;
-  background-image: linear-gradient(15deg, #155E54 0%, #3b5998 150%);
+  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 100%;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-l);
 }
-.sur__hero-section .sur__card-grid {
+
+.sur__card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-column-gap: var(--spacing-l);
@@ -979,17 +977,30 @@ video {
   max-width: var(--width-container);
   width: 100%;
 }
-.sur__hero-section .sur__card-grid .sur__card {
+
+@media (min-width: 480px) {
+  .sur__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .sur__card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.sur__card {
   list-style: none;
   position: relative;
 }
-.sur__hero-section .sur__card-grid .sur__card:before {
+
+.sur__card:before {
   content: "";
   display: block;
   padding-bottom: 150%;
   width: 100%;
 }
-.sur__hero-section .sur__card-grid .sur__card .sur__card__background {
+
+.sur__card__background {
   background-size: cover;
   background-position: center;
   border-radius: var(--spacing-l);
@@ -1003,25 +1014,6 @@ video {
   transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
 }
-.sur__hero-section .sur__card-grid .sur__card .sur__card__content {
-  left: 0;
-  padding: var(--spacing-l);
-  position: absolute;
-  top: 0;
-}
-.sur__hero-section .sur__card-grid .sur__card .sur__card__content .sur__card__category {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: var(--spacing-s);
-  text-transform: uppercase;
-}
-.sur__hero-section .sur__card-grid .sur__card .sur__card__content .sur__card__heading {
-  color: var(--text-lighter);
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  line-height: 1.4;
-  word-spacing: 100vw;
-}
 
 .sur__card:hover .sur__card__background {
   transform: scale(1.05) translateZ(0);
@@ -1029,6 +1021,28 @@ video {
 
 .sur__card-grid:hover > .sur__card:not(:hover) .sur__card__background {
   filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.sur__card__content {
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.sur__card__category {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.sur__card__heading {
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
 }
 
 /*Destacado del mes*/
@@ -1065,14 +1079,6 @@ video {
 @media only screen and (max-width: 480px) {
   .animacion {
     display: none;
-  }
-  .sur__card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 960px) {
-  .sur__card-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 /*Fin @medias SUR*/
