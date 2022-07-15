@@ -859,8 +859,26 @@ section div .conteiner {
   background-image: radial-gradient(circle, #3b5998, #155E54);
 }
 
+#jujuy {
+  background-color: #f7971e;
+  padding: 5%;
+}
+#jujuy h2 {
+  margin-top: 10vh;
+}
+
 /*@medias NOA - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+  .no__mostrar {
+    display: none;
+  }
+}
 /*@medias NOA - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .no__mostrar {
+    display: none;
+  }
+}
 /*Fin @medias NOA*/
 /*Fin NOA*/
 /*LITORAL*/
