@@ -41,7 +41,7 @@
   &:hover, &:active, &:focus {
     flex: 3;
 
-    .title {
+    .centro__title {
       transform: translate(-50%, -50%) rotate(0);
       
       @media screen and (min-width: 1000px) {
@@ -50,7 +50,7 @@
     }
   }
 
-  .title {
+  .centro__title {
     font-family: "Fredoka One";
     font-size: 5rem;
     left: 50%;
@@ -70,14 +70,30 @@
   }
 }
 
+#mendoza {
+  @include flex (flex, row, wrap, space-between);
+  padding: 5%;
+  background-color: nth($colors, 13);
+
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+
+
 /*@medias CENTRO - pantalla mobile*/
 @media only screen and (max-width: 480px) {
-    
+    .centro__title a {
+      font-size: 2rem;
+    }
 }
 
 /*@medias CENTRO - para pantalla tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
-
+  .centro__title a {
+    font-size: 3rem;
+  }
 }
 
 /*Fin @medias CENTRO*/

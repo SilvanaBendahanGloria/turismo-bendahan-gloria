@@ -942,15 +942,15 @@ video {
 .section:hover, .section:active, .section:focus {
   flex: 3;
 }
-.section:hover .title, .section:active .title, .section:focus .title {
+.section:hover .centro__title, .section:active .centro__title, .section:focus .centro__title {
   transform: translate(-50%, -50%) rotate(0);
 }
 @media screen and (min-width: 1000px) {
-  .section:hover .title, .section:active .title, .section:focus .title {
+  .section:hover .centro__title, .section:active .centro__title, .section:focus .centro__title {
     transform: translate(-50%, -50%) scale(1.25);
   }
 }
-.section .title {
+.section .centro__title {
   font-family: "Fredoka One";
   font-size: 5rem;
   left: 50%;
@@ -960,17 +960,39 @@ video {
   transform: translate(-50%, -50%);
   transition: 0.5s ease;
 }
-.section .title a {
+.section .centro__title a {
   color: #111;
 }
 @media screen and (min-width: 1000px) {
-  .section .title {
+  .section .centro__title {
     transform: translate(-50%, -50%) rotate(90deg);
   }
 }
 
+#mendoza {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5%;
+  background-color: #f7971e;
+}
+#mendoza h2 {
+  margin-top: 10vh;
+}
+
 /*@medias CENTRO - pantalla mobile*/
+@media only screen and (max-width: 480px) {
+  .centro__title a {
+    font-size: 2rem;
+  }
+}
 /*@medias CENTRO - para pantalla tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .centro__title a {
+    font-size: 3rem;
+  }
+}
 /*Fin @medias CENTRO*/
 /*Fin Centro*/
 /*SUR*/
