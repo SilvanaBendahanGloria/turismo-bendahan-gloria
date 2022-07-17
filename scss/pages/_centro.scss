@@ -81,7 +81,61 @@
   }
 }
 
+#san__luis {
+  @include flex (flex, row, wrap, space-between);
+  margin: 5%;
+  padding: 5%;
+  background-color: nth($colors, 20);
 
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+
+#cordoba {
+  @include flex (flex, row, wrap, space-between);
+  margin: 5%;
+  padding: 5%;
+  background-color: nth($colors, 5);
+
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#pampa {
+  @include flex (flex, row, wrap, space-between);
+  margin: 5%;
+  padding: 5%;
+  background-color: nth($colors, 8);
+
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#buenos__aires {
+  @include flex (flex, row, wrap, space-between);
+  margin: 5%;
+  padding: 5%;
+  background-color: nth($colors, 9);
+
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#caba {
+  @include flex (flex, row, wrap, space-between);
+  margin: 5%;
+  padding: 5%;
+  background-color: nth($colors, 3);
+
+  h2{
+    margin-top: 10vh;
+  }
+}
 
 /*@medias CENTRO - pantalla mobile*/
 @media only screen and (max-width: 480px) {
@@ -96,6 +150,5 @@
     font-size: 3rem;
   }
 }
-
 /*Fin @medias CENTRO*/
 /*Fin Centro*/

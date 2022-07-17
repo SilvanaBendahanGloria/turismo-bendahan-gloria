@@ -28,19 +28,6 @@
     width: 100%;
   }
   
-  @media (min-width: 480px) {
-    .sur__card-grid {
-      grid-template-columns: repeat(2, 1fr);
-      
-    }
-  }
-  
-  @media (min-width: 960px) {
-    .sur__card-grid {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
   .sur__card {
     list-style: none;
     position: relative;
@@ -179,8 +166,22 @@
 @media (max-width: 960px) and (min-with:481px) {
 
 }
+
+@media (min-width: 480px) {
+  .sur__card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+@media (min-width: 960px) {
+  .sur__card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 /*Fin @medias SUR*/
 /*Fin SUR*/
+
 
 
   
