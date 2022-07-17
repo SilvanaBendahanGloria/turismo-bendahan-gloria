@@ -72,6 +72,7 @@
 
 #mendoza {
   @include flex (flex, row, wrap, space-between);
+  margin: 5%;
   padding: 5%;
   background-color: nth($colors, 13);
 

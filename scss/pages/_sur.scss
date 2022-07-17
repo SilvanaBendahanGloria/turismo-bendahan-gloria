@@ -98,6 +98,56 @@
     word-spacing: 100vw;
   }
   
+#neuquen {
+  margin: 5%;
+  padding: 5%;
+  background-image: linear-gradient(nth($colors,19), nth($colors,20));
+  
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#rio__negro {
+  margin: 5%;
+  padding: 5%;
+  background-image: linear-gradient(nth($colors,20), nth($colors,21));
+  
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#chubut {
+  margin: 5%;
+  padding: 5%;
+  background-image: linear-gradient(nth($colors,21), nth($colors,3));
+  
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#santa__cruz {
+  margin: 5%;
+  padding: 5%;
+  background-image: linear-gradient(nth($colors,3), nth($colors,5));
+  
+  h2{
+    margin-top: 10vh;
+  }
+}
+
+#tierra__fuego {
+  margin: 5%;
+  padding: 5%;
+  background-image: linear-gradient(nth($colors,5), nth($colors,8));
+  
+  h2{
+    margin-top: 10vh;
+  }
+}
+
 
 /*Destacado del mes*/
 .animacion {
