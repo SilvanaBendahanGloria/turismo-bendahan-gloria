@@ -121,7 +121,10 @@
 }
 
 #jujuy {
-  background-color: nth($colors, 13);
+  margin: 5%;
+  border-color: nth($colors, 13);
+  border-style: double;
+  border-width: 2px;
   padding: 5%;
 
   h2{

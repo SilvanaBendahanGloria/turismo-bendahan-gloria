@@ -860,7 +860,10 @@ section div .conteiner {
 }
 
 #jujuy {
-  background-color: #f7971e;
+  margin: 5%;
+  border-color: #f7971e;
+  border-style: double;
+  border-width: 2px;
   padding: 5%;
 }
 #jujuy h2 {
@@ -896,6 +899,7 @@ video {
 
 #entre__rios {
   padding: 5%;
+  background-image: linear-gradient(#155E54, #3b5998);
 }
 #entre__rios h2 {
   margin-top: 10vh;
