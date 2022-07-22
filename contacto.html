@@ -36,38 +36,37 @@
   </head>
 
   <body class="contacto__body" id="inicio">
-    <header class="fixed-top" id="header__color">
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Menú</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="nosotros.html">Quienes Somos</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Regiones
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="noa.html">Región Norte</a></li>
-                    <li><a class="dropdown-item" href="litoral.html">Región Litoral</a></li>
-                    <li><a class="dropdown-item" href="centro.html">Region Centro</a></li>
-                    <li><a class="dropdown-item" href="sur.html">Región Sur</a></li>
+    <header class="fixed-top">      
+      <nav>
+        <div class="container" id="new__color__menu">
+          <input type="checkbox" name="" id="menuBtn">
+          <div class="menu_overlay">
+            <label for="menuBtn">
+              <i class="fas fa-times"></i>
+            </label>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="nosotros.html">Quienes Somos</a></li>
+              <div class="regiones">
+                <li>Regiones
+                  <ul>
+                    <li><a href="noa.html">Norte</a></li>
+                    <li><a href="litoral.html">Litoral</a></li>
+                    <li><a href="centro.html">Centro</a></li>
+                    <li><a href="sur.html">Sur</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active"  aria-current="page" href="#inicio">Contacto</a>
-                </li>
-              </ul>
+              </div>
+              <li><a href="#inicio">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="landing_page">
+            <div class="menu">
+              <label for="menuBtn">
+                <i class="fas fa-bars menu__white"></i>
+              </label>
             </div>
+          </div>
         </div>
       </nav>
     </header>

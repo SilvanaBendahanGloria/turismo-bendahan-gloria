@@ -135,11 +135,19 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
 }
 
 /*Header (general excepto Index*/
-#navbar__width {
+/*Menu*/
+#new__color__menu {
   width: 100vw;
   min-width: 100%;
-  padding: 0;
-  margin: 0;
+  height: 10vh;
+  min-height: 10%;
+  margin-left: 0;
+  padding-left: 0;
+  position: relative;
+}
+
+.menu__white {
+  background-color: #ffffff;
 }
 
 /*Fin Header*/

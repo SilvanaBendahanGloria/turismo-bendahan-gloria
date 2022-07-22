@@ -35,37 +35,36 @@
   </head>
 
   <body class="sur__body" id="inicio">
-    <header class="fixed-top" id="header__color">
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Menú</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Quienes Somos</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Regiones
-                </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="noa.html">Región Norte</a></li>
-                    <li><a class="dropdown-item" href="litoral.html">Región Litoral</a></li>
-                    <li><a class="dropdown-item" href="centro.html">Region Centro</a></li>
-                    <li><a class="dropdown-item active" aria-current="page" href="#inicio">Región Sur</a></li>
+    <header class="fixed-top">      
+      <nav>
+        <div class="container" id="new__color__menu">
+          <input type="checkbox" name="" id="menuBtn">
+          <div class="menu_overlay">
+            <label for="menuBtn">
+              <i class="fas fa-times"></i>
+            </label>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="nosotros.html">Quienes Somos</a></li>
+              <div class="regiones">
+                <li>Regiones
+                  <ul>
+                    <li><a href="noa.html">Norte</a></li>
+                    <li><a href="litoral.html">Litoral</a></li>
+                    <li><a href="centro.html">Centro</a></li>
+                    <li><a href="#inicio">Sur</a></li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
+              </div>
+              <li><a href="contacto.html">Contacto</a></li>
             </ul>
+          </div>
+          <div class="landing_page">
+            <div class="menu">
+              <label for="menuBtn">
+                <i class="fas fa-bars menu__white"></i>
+              </label>
+            </div>
           </div>
         </div>
       </nav>
@@ -270,7 +269,7 @@
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
               <div class="accordion-body">
                 <div class="clearfix">
-                  <p class="parrafo text-justify">Bariloche es, sin dudas, el destino más icónico y conocido de la patagonia argentina. Por su cercanía a los centros emisivos, por su buena conexion aérea y terrestre y por la infinidad de atractivos que posee, es el imperdible de cada estación.</p>
+                  <p class="parrafo text-justify">Bariloche es, sin dudas, el destino más icónico y conocido de la patagonia argentina. Por su cercanía a los centros emisivos, por su buena conexión aérea y terrestre y por la infinidad de atractivos que posee, es el imperdible de cada estación.</p>
                   <div>
                     <img src="imagenes/rio-negro-bariloche.jpg" alt="Muelle nevado en Bariloche, Río Negro" class=" d-block img-fluid float-end ms-2">
                   </div>
@@ -331,7 +330,7 @@
           <div class="accordion-item">
             <h3 class="accordion-header" id="panelsStayOpen-headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                ............
+                Parque Nacional Los Alerces
               </button>
             </h3>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
@@ -350,7 +349,7 @@
           <div class="accordion-item">
             <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                .............
+                Trevelin
               </button>
             </h3>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
@@ -370,7 +369,7 @@
           <div class="accordion-item">
             <h3 class="accordion-header" id="panelsStayOpen-headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                ..............
+                Costa
               </button>
             </h3>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
