@@ -167,5 +167,13 @@
     display: none;
   }
 }
+
+/*@medias PRINT*/
+@media print {
+  .comic {
+    display: none;
+  }
+}
+
 /*Fin @medias NOA*/
 /*Fin NOA*/

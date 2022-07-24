@@ -121,5 +121,23 @@
     font-size: 3rem;
   }
 }
+
+/*@medias PRINT*/
+@media print {
+  .flexing {
+    display: none;
+  }
+
+  .ofertas__grey {
+    img {
+      width: 30vw;
+    }
+  }
+
+  #mendoza, #cordoba, #san__luis, #pampa, #buenos__aires, #caba {
+    padding: 1px;
+    margin: 1px;
+  }
+}
 /*Fin @medias CENTRO*/
 /*Fin Centro*/

@@ -755,6 +755,24 @@ section div .conteiner {
     font-size: 20px;
   }
 }
+/*@medias PRINT*/
+@media print {
+  .nosotros__card__side--front {
+    display: none;
+  }
+  .nosotros__card__side--back {
+    transform: rotateY(0);
+    width: 80vw;
+  }
+  .artboard {
+    align-items: flex-start;
+    padding: 1rem;
+    margin-top: 1vh;
+  }
+  .equipo {
+    display: none;
+  }
+}
 /*Fin @medias nosotros*/
 /*Fin Nosotros*/
 /*NORTE*/
@@ -939,6 +957,12 @@ section div .conteiner {
     display: none;
   }
 }
+/*@medias PRINT*/
+@media print {
+  .comic {
+    display: none;
+  }
+}
 /*Fin @medias NOA*/
 /*Fin NOA*/
 /*LITORAL*/
@@ -979,6 +1003,12 @@ video {
 }
 
 /*@medias LITORAL*/
+/*@medias PRINT*/
+@media print {
+  .video {
+    display: none;
+  }
+}
 /*Fin @medias LITORAL*/
 /*Fin Litoral*/
 /*CENTRO*/
@@ -1105,6 +1135,19 @@ video {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .centro__title a {
     font-size: 3rem;
+  }
+}
+/*@medias PRINT*/
+@media print {
+  .flexing {
+    display: none;
+  }
+  .ofertas__grey img {
+    width: 30vw;
+  }
+  #mendoza, #cordoba, #san__luis, #pampa, #buenos__aires, #caba {
+    padding: 1px;
+    margin: 1px;
   }
 }
 /*Fin @medias CENTRO*/
@@ -1260,6 +1303,12 @@ video {
 @media (min-width: 960px) {
   .sur__card-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*@medias PRINT*/
+@media print {
+  .sur__hero-section {
+    display: none;
   }
 }
 /*Fin @medias SUR*/

@@ -43,5 +43,11 @@ video {
 
 /*@medias LITORAL*/
 
+/*@medias PRINT*/
+@media print {
+    .video {
+        display: none;
+    }
+}
 /*Fin @medias LITORAL*/
 /*Fin Litoral*/

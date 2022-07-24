@@ -230,5 +230,28 @@
     }
   }
 }
+
+/*@medias PRINT*/
+@media print {
+  .nosotros__card__side--front {
+    display: none;
+  }
+
+  .nosotros__card__side--back {
+    transform: rotateY(0);
+    width: 80vw;
+  } 
+
+  .artboard {
+    align-items: flex-start;  
+    padding: 1rem;
+    margin-top: 1vh;
+  }
+
+  .equipo {
+    display: none;
+  }
+}
+
 /*Fin @medias nosotros*/
 /*Fin Nosotros*/

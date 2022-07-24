@@ -150,6 +150,13 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/*@medias PRINT*/
+@media print {
+  .sur__hero-section {
+    display: none;
+  }
+}
 /*Fin @medias SUR*/
 /*Fin SUR*/
 
