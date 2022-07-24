@@ -37,6 +37,9 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
 /*4*/
 /*Colores*/
 /*21*/
+/*Con Font: DM Serif*/
+/*Con Font: Lato*/
+/*Background top Nosotros y Contacto*/
 #contacto__portada, #nosotros__portada {
   background-color: #4b134f;
   width: 100%;
@@ -45,12 +48,21 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   align-items: center;
 }
 
+/*Title top Nosotros y Contacto*/
 #contacto__portada h1, #nosotros__portada h1 {
   color: #ffffff;
   font-family: "Alegreya";
   margin-left: 1vw;
 }
 
+/*Background Yellow Index, Nosotros y Contacto*/
+.contacto__main, .nosotros__main, #color__menu {
+  background: #f7971e;
+  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
+  background: linear-gradient(to right, #ffd200, #f7971e);
+}
+
+/*Display Provincias individuales*/
 #tierra__fuego, #santa__cruz, #chubut, #rio__negro, #neuquen, #caba, #buenos__aires, #pampa, #cordoba, #san__luis, #mendoza, #formosa, #chaco, #santa__fe, #misiones, #corrientes, #entre__rios, #san__juan, #rioja, #catamarca, #santiago, #tucuman, #salta, #jujuy {
   margin: 5%;
   padding: 5%;
@@ -59,20 +71,26 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   margin-top: 10vh;
 }
 
-.conteiner__doble { /*Para margen superior en cards*/
+/*Mixin para Display*/
+/*Mixin para NOA provincias individuales*/
+/*Para margen superior en cards*/
+.conteiner__doble {
   margin-top: 5vh;
 }
 
-.titulo_carrusel { /*Para todos los carruseles*/
+/*Para todos los carruseles*/
+.titulo_carrusel {
   font-size: 30px;
 }
 
-.titulo_cards { /*Para todos los cards de provincias*/
+/*Para todos los cards de provincias*/
+.titulo_cards {
   font-family: "DM Serif Text";
   font-size: 35px;
 }
 
-.parrafo { /*Para todos los párrafos*/
+/*Para todos los párrafos*/
+.parrafo {
   font-family: "Lato";
   font-size: 20px;
   color: black;
@@ -83,28 +101,29 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
     font-size: 15px;
   }
 }
+/*Backgrounds*/
 .backg_1 {
-  background-color: #155E54;
+  background-color: #155E54; /*verde oscuro*/
 }
 
 .backg_2 {
-  background-color: #ff7800;
+  background-color: #ff7800; /*naranja*/
 }
 
 .backg_3 {
-  background-color: rebeccapurple;
+  background-color: rebeccapurple; /*lila*/
 }
 
 .backg_4 {
-  background-color: #c6df3c;
+  background-color: #c6df3c; /*amarillo*/
 }
 
 .backg_5 {
-  background-color: #3b5998;
+  background-color: #3b5998; /*azul*/
 }
 
 .backg_6 {
-  background-color: #c94b4b;
+  background-color: #c94b4b; /*naranja colorado*/
 }
 
 .titulo__ofertas__grey {
@@ -117,7 +136,6 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /*Mixins*/
   align-items: center;
   background-color: #333;
   padding: 25px;
@@ -310,7 +328,7 @@ footer .enlace:hover:after {
   float: left;
   margin: 15px 8px;
   box-shadow: 2px 2px 5px 0px rgb(82, 0, 67);
-  border: 1px solid; /*border: 1px solid #622657;*/
+  border: 1px solid;
 }
 .round-btn a {
   display: block !important;
@@ -373,9 +391,6 @@ section div .conteiner {
   margin-left: 0;
   padding-left: 0;
   position: relative;
-  background: #f7971e;
-  background: -webkit-linear-gradient(to right, #ffd200, #f7971e); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ffd200, #f7971e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .menu_overlay {
@@ -411,6 +426,7 @@ section div .conteiner {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
 }
@@ -461,17 +477,8 @@ section div .conteiner {
   text-shadow: 0 0 1px #111;
   display: flex;
   flex-direction: column;
-}
-
-.main_text {
-  color: #c94b4b;
-  position: absolute;
-  left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 0 0 1px #111;
-  display: flex;
-  flex-direction: column;
 }
 
 .h2-r,
@@ -509,7 +516,10 @@ section div .conteiner {
 @media screen and (max-width: 480px) {
   .h2-r,
 .h2-l {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .h2-1 {
+    margin-left: 50px;
   }
   .h2-r {
     transform: rotate(0deg);
@@ -549,12 +559,6 @@ section div .conteiner {
 }
 .sub__title {
   font-family: "Dancing Script";
-}
-
-.nosotros__main {
-  background: #f7971e;
-  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
-  background: linear-gradient(to right, #ffd200, #f7971e);
 }
 
 .historia {
@@ -1035,6 +1039,7 @@ video {
 }
 .section .centro__title a {
   color: #111;
+  text-decoration: none;
 }
 @media screen and (min-width: 1000px) {
   .section .centro__title {
@@ -1260,12 +1265,6 @@ video {
 /*Fin @medias SUR*/
 /*Fin SUR*/
 /*Contacto*/
-.contacto__main {
-  background: #f7971e;
-  background: -webkit-linear-gradient(to right, #ffd200, #f7971e);
-  background: linear-gradient(to right, #ffd200, #f7971e);
-}
-
 .formulario {
   width: 75vw;
   display: flex;
@@ -1274,8 +1273,8 @@ video {
   justify-content: center;
   margin-top: 1%;
   margin-left: 15%;
-  font-family: "Lato";
   color: rebeccapurple;
+  font-family: "Lato";
   font-size: 20px;
 }
 
@@ -1284,7 +1283,8 @@ input::placeholder {
   font-style: italic;
 }
 
-/*No @media needed :)*/
+/*@media CONTACTO*/
+/*Fin @media CONTACTO*/
 /*Fin Contacto*/
 
 /*# sourceMappingURL=style.css.map */

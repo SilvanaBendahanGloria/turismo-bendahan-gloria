@@ -8,17 +8,7 @@
 }
 
 .contacto__main {
-    background: nth($colors,13); 
-    background: -webkit-linear-gradient(
-      to right,
-      nth($colors,14),
-      nth($colors,13)
-    ); 
-    background: linear-gradient(
-      to right,
-      nth($colors,14),
-      nth($colors,13)
-    );
+  @extend %bg_yellow;
 }
 
 .formulario {
@@ -26,14 +16,16 @@
     @include flex(flex, column, wrap, center);
     margin-top: 1%;
     margin-left: 15%;
-    font-family: nth($font,4);
     color: nth($colors,21);
-    font-size: 20px;
+    font-family: map-get($map: $font_med, $key: font_lato);
+    font-size: map-get($map: $font_med, $key: font_20);
 }
 
 input::placeholder {
   color: rgb(224, 220, 220);
   font-style: italic;
 }
-/*No @media needed :)*/
+/*@media CONTACTO*/
+
+/*Fin @media CONTACTO*/
 /*Fin Contacto*/

@@ -12,17 +12,7 @@
 }
 
 .nosotros__main {
-    background:  nth($colors,13);
-    background: -webkit-linear-gradient(
-      to right,
-      nth($colors,14),
-      nth($colors,13)
-    ); 
-    background: linear-gradient(
-      to right,
-      nth($colors,14),
-      nth($colors,13)
-    );    
+  @extend %bg_yellow;
 }
 
 .historia {

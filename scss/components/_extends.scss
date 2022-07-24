@@ -1,3 +1,4 @@
+/*Background top Nosotros y Contacto*/
 %portada {
   background-color: nth($colors,16);
   width: 100%;
@@ -6,12 +7,29 @@
   align-items: center;
 }
 
+/*Title top Nosotros y Contacto*/
 %titulo_portada {
   color: nth($colors,1);
   font-family: nth($font,1) ;
   margin-left: 1vw;
 }
 
+/*Background Yellow Index, Nosotros y Contacto*/
+%bg_yellow {
+  background:  nth($colors,13);
+    background: -webkit-linear-gradient(
+      to right,
+      nth($colors,14),
+      nth($colors,13)
+    ); 
+    background: linear-gradient(
+      to right,
+      nth($colors,14),
+      nth($colors,13)
+    ); 
+}
+
+/*Display Provincias individuales*/
 %provincias {
   margin: 5%;
   padding: 5%;

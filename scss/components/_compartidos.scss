@@ -1,19 +1,23 @@
-.conteiner__doble { /*Para margen superior en cards*/
+/*Para margen superior en cards*/
+.conteiner__doble { 
     margin-top: 5vh;
 }
 
-.titulo_carrusel { /*Para todos los carruseles*/
+/*Para todos los carruseles*/
+.titulo_carrusel { 
     font-size: 30px;
 }
-  
-.titulo_cards { /*Para todos los cards de provincias*/
-    font-family: nth($font,3);
-    font-size: 35px;
+
+/*Para todos los cards de provincias*/  
+.titulo_cards { 
+    font-family: map-get($map: $font_big, $key: font_dm );
+    font-size: map-get($map: $font_big, $key: font_35);
 }
 
-.parrafo { /*Para todos los párrafos*/
-    font-family: nth($font,4); 
-    font-size: 20px;
+/*Para todos los párrafos*/
+.parrafo { 
+    font-family: map-get($map: $font_med, $key: font_lato); 
+    font-size: map-get($map: $font_med, $key: font_20);
     color: black;
 }
 
@@ -23,28 +27,29 @@
     }
 }
 
+/*Backgrounds*/
 .backg_1 {
-    background-color: nth($colors,5);
+    background-color: nth($colors,5); /*verde oscuro*/
 }
 
 .backg_2 {
-    background-color: nth($colors,8);
+    background-color: nth($colors,8); /*naranja*/
 }
 
 .backg_3 {
-    background-color: nth($colors,21);
+    background-color: nth($colors,21); /*lila*/
 }
 
 .backg_4 {
-    background-color: nth($colors,17);
+    background-color: nth($colors,17); /*amarillo*/
 }
 
 .backg_5 {
-    background-color: nth($colors,3);
+    background-color: nth($colors,3); /*azul*/
 }
 
 .backg_6 {
-    background-color: nth($colors,15);
+    background-color: nth($colors,15); /*naranja colorado*/
 }
 
 .titulo__ofertas__grey { 
@@ -53,7 +58,7 @@
 }
 
 .ofertas__grey { 
-    @include flex(flex, row, wrap, space-evenly);    /*Mixins*/
+    @include flex(flex, row, wrap, space-evenly);    
     align-items:center;
     background-color: nth($colors,11);
     padding: 25px;
