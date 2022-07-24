@@ -880,9 +880,11 @@ section div .conteiner {
 }
 
 #jujuy {
+  /*extend*/
   border-color: #f7971e;
   border-style: double;
   border-width: 2px;
+  /*mixin*/
 }
 
 #salta {

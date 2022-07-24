@@ -4,3 +4,9 @@
     flex-wrap: $wrap;
     justify-content: $justify;
 }
+
+@mixin noa ($border, $style, $width) {
+    border-color: $border;
+    border-style: $style;
+    border-width: $width;
+}

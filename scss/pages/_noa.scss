@@ -121,52 +121,38 @@
 }
 
 #jujuy {
-  @extend %provincias;
-  border-color: nth($colors, 13);
-  border-style: double;
-  border-width: 2px;
+  @extend %provincias;  /*extend*/
+  @include noa(nth($colors, 13), double, 2px); /*mixin*/
 }
 
 #salta {
   @extend %provincias;
-  border-color: nth($colors, 6);
-  border-style: double;
-  border-width: 2px;
+  @include noa(nth($colors, 6), double, 2px);
 }
 
 #tucuman {
   @extend %provincias;
-  border-color: nth($colors, 2);
-  border-style: double;
-  border-width: 2px;
+  @include noa(nth($colors, 2), double, 2px);
 }
 
 #santiago {
   @extend %provincias;
-  border-color: nth($colors, 5);
-  border-style: double;
-  border-width: 2px;
+  @include noa(nth($colors, 5), double, 2px);
 }
 
 #catamarca {
   @extend %provincias;
-  border-color: nth($colors, 13);
-  border-style: double;
-  border-width: 2px;
+  @include noa(nth($colors, 13), double, 2px);
 }
 
 #rioja {
   @extend %provincias;
-  border-color: nth($colors, 6);
-  border-style: double;
-  border-width: 2px;
+  @include noa(nth($colors, 6), double, 2px);
 }
 
 #san__juan {
   @extend %provincias;
-  border-color: nth($colors, 2);
-  border-style: double;
-  border-width: 2px;
+  @include noa(nth($colors, 2), double, 2px);
 }
 /*@medias NOA - pantalla mobile*/
 @media only screen and (max-width: 480px) {
