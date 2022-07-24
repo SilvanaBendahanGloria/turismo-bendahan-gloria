@@ -1,6 +1,6 @@
 /*Nosotros*/     
 #nosotros__portada {
-  @extend %portada;
+  @extend %portada; /*extends*/
 
     h1 {
       @extend %titulo_portada;

@@ -53,7 +53,7 @@
 }
 
 .ofertas__grey { 
-    @include flex(flex, row, wrap, space-evenly);    
+    @include flex(flex, row, wrap, space-evenly);    /*Mixins*/
     align-items:center;
     background-color: nth($colors,11);
     padding: 25px;

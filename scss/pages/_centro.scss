@@ -72,69 +72,39 @@
 
 #mendoza {
   @include flex (flex, row, wrap, space-between);
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-color: nth($colors, 13);
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #san__luis {
   @include flex (flex, row, wrap, space-between);
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-color: nth($colors, 20);
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 
 #cordoba {
   @include flex (flex, row, wrap, space-between);
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-color: nth($colors, 5);
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #pampa {
   @include flex (flex, row, wrap, space-between);
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-color: nth($colors, 8);
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #buenos__aires {
   @include flex (flex, row, wrap, space-between);
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-color: nth($colors, 9);
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #caba {
   @include flex (flex, row, wrap, space-between);
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-color: nth($colors, 3);
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 /*@medias CENTRO - pantalla mobile*/

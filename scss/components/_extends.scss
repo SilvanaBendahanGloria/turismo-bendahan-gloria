@@ -7,7 +7,16 @@
 }
 
 %titulo_portada {
-    color: nth($colors,1);
-    font-family: nth($font,1) ;
-    margin-left: 1vw;
+  color: nth($colors,1);
+  font-family: nth($font,1) ;
+  margin-left: 1vw;
+}
+
+%provincias {
+  margin: 5%;
+  padding: 5%;
+
+    h2 {
+      margin-top: 10vh;
+    }
 }

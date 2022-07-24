@@ -107,53 +107,28 @@
 }
   
 #neuquen {
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-image: linear-gradient(nth($colors,19), nth($colors,21));
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #rio__negro {
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-image: linear-gradient(nth($colors,21), nth($colors,3));
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #chubut {
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-image: linear-gradient(nth($colors,3), nth($colors,5));
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #santa__cruz {
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-image: linear-gradient(nth($colors,5), nth($colors,8));  
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #tierra__fuego {
-  margin: 5%;
-  padding: 5%;
+  @extend %provincias;
   background-image: linear-gradient(nth($colors,8), nth($colors,14));
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 /*@medias Sur - pantalla mobile*/

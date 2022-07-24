@@ -121,87 +121,52 @@
 }
 
 #jujuy {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 13);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #salta {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 6);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #tucuman {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 2);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #santiago {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 5);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #catamarca {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 13);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #rioja {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 6);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 
 #san__juan {
-  margin: 5%;
+  @extend %provincias;
   border-color: nth($colors, 2);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-
-  h2{
-    margin-top: 10vh;
-  }
 }
 /*@medias NOA - pantalla mobile*/
 @media only screen and (max-width: 480px) {

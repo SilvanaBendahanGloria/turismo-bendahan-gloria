@@ -51,6 +51,14 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   margin-left: 1vw;
 }
 
+#tierra__fuego, #santa__cruz, #chubut, #rio__negro, #neuquen, #caba, #buenos__aires, #pampa, #cordoba, #san__luis, #mendoza, #formosa, #chaco, #santa__fe, #misiones, #corrientes, #entre__rios, #san__juan, #rioja, #catamarca, #santiago, #tucuman, #salta, #jujuy {
+  margin: 5%;
+  padding: 5%;
+}
+#tierra__fuego h2, #santa__cruz h2, #chubut h2, #rio__negro h2, #neuquen h2, #caba h2, #buenos__aires h2, #pampa h2, #cordoba h2, #san__luis h2, #mendoza h2, #formosa h2, #chaco h2, #santa__fe h2, #misiones h2, #corrientes h2, #entre__rios h2, #san__juan h2, #rioja h2, #catamarca h2, #santiago h2, #tucuman h2, #salta h2, #jujuy h2 {
+  margin-top: 10vh;
+}
+
 .conteiner__doble { /*Para margen superior en cards*/
   margin-top: 5vh;
 }
@@ -109,6 +117,7 @@ font-family: 'Lato', sans-serif; --> textos generales y formulario de contacto*/
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /*Mixins*/
   align-items: center;
   background-color: #333;
   padding: 25px;
@@ -535,6 +544,9 @@ section div .conteiner {
 /*Fin @medias index*/
 /*Fin Index*/
 /*Nosotros*/
+#nosotros__portada {
+  /*extends*/
+}
 .sub__title {
   font-family: "Dancing Script";
 }
@@ -868,80 +880,45 @@ section div .conteiner {
 }
 
 #jujuy {
-  margin: 5%;
   border-color: #f7971e;
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#jujuy h2 {
-  margin-top: 10vh;
 }
 
 #salta {
-  margin: 5%;
   border-color: #D6403A;
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#salta h2 {
-  margin-top: 10vh;
 }
 
 #tucuman {
-  margin: 5%;
   border-color: rgb(82, 0, 67);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#tucuman h2 {
-  margin-top: 10vh;
 }
 
 #santiago {
-  margin: 5%;
   border-color: #155E54;
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#santiago h2 {
-  margin-top: 10vh;
 }
 
 #catamarca {
-  margin: 5%;
   border-color: #f7971e;
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#catamarca h2 {
-  margin-top: 10vh;
 }
 
 #rioja {
-  margin: 5%;
   border-color: #D6403A;
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#rioja h2 {
-  margin-top: 10vh;
 }
 
 #san__juan {
-  margin: 5%;
   border-color: rgb(82, 0, 67);
   border-style: double;
   border-width: 2px;
-  padding: 5%;
-}
-#san__juan h2 {
-  margin-top: 10vh;
 }
 
 /*@medias NOA - pantalla mobile*/
@@ -972,57 +949,27 @@ video {
 }
 
 #entre__rios {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#155E54, #3b5998);
-}
-#entre__rios h2 {
-  margin-top: 10vh;
 }
 
 #corrientes {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#ff7800, #ffd200);
-}
-#corrientes h2 {
-  margin-top: 10vh;
 }
 
 #misiones {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(rebeccapurple, #4b134f);
-}
-#misiones h2 {
-  margin-top: 10vh;
 }
 
 #santa__fe {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#c6df3c, #D6403A);
-}
-#santa__fe h2 {
-  margin-top: 10vh;
 }
 
 #chaco {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#3b5998, rebeccapurple);
-}
-#chaco h2 {
-  margin-top: 10vh;
 }
 
 #formosa {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#c94b4b, #4b134f);
-}
-#formosa h2 {
-  margin-top: 10vh;
 }
 
 /*@medias LITORAL*/
@@ -1098,12 +1045,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 5%;
   background-color: #f7971e;
-}
-#mendoza h2 {
-  margin-top: 10vh;
 }
 
 #san__luis {
@@ -1111,12 +1053,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 5%;
   background-color: rgba(202, 55, 130, 0.65);
-}
-#san__luis h2 {
-  margin-top: 10vh;
 }
 
 #cordoba {
@@ -1124,12 +1061,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 5%;
   background-color: #155E54;
-}
-#cordoba h2 {
-  margin-top: 10vh;
 }
 
 #pampa {
@@ -1137,12 +1069,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 5%;
   background-color: #ff7800;
-}
-#pampa h2 {
-  margin-top: 10vh;
 }
 
 #buenos__aires {
@@ -1150,12 +1077,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 5%;
   background-color: #ccc;
-}
-#buenos__aires h2 {
-  margin-top: 10vh;
 }
 
 #caba {
@@ -1163,12 +1085,7 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5%;
-  padding: 5%;
   background-color: #3b5998;
-}
-#caba h2 {
-  margin-top: 10vh;
 }
 
 /*@medias CENTRO - pantalla mobile*/
@@ -1303,48 +1220,23 @@ video {
   }
 }
 #neuquen {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(rgba(30, 11, 54, 0.65), rebeccapurple);
-}
-#neuquen h2 {
-  margin-top: 10vh;
 }
 
 #rio__negro {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(rebeccapurple, #3b5998);
-}
-#rio__negro h2 {
-  margin-top: 10vh;
 }
 
 #chubut {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#3b5998, #155E54);
-}
-#chubut h2 {
-  margin-top: 10vh;
 }
 
 #santa__cruz {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#155E54, #ff7800);
-}
-#santa__cruz h2 {
-  margin-top: 10vh;
 }
 
 #tierra__fuego {
-  margin: 5%;
-  padding: 5%;
   background-image: linear-gradient(#ff7800, #ffd200);
-}
-#tierra__fuego h2 {
-  margin-top: 10vh;
 }
 
 /*@medias Sur - pantalla mobile*/
