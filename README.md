@@ -13,7 +13,7 @@ Desafío de Coderhouse
 
 - 📫 How to reach me **https://www.linkedin.com/in/silvanabendahangloria/**
 
-- ⚡ Living in Buenos Aires, moving to Spain soon
+- ⚡ Living in Buenos Aires, moving to Spain soon.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
