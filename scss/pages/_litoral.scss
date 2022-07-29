@@ -13,32 +13,32 @@ video {
 
 #entre__rios {
     @extend %provincias;
-    background-image: linear-gradient(nth($colors,5), nth($colors,3));
+    background-image: linear-gradient(nth($colors,5), nth($colors,1));
 }
 
 #corrientes {
     @extend %provincias;
-    background-image: linear-gradient(nth($colors,8), nth($colors,14));
+    background-image: linear-gradient(nth($colors,8), nth($colors,1));
 }
 
 #misiones {
     @extend %provincias;
-    background-image: linear-gradient(nth($colors,21), nth($colors,16));
+    background-image: linear-gradient(nth($colors,21), nth($colors,1));
 }
 
 #santa__fe {
     @extend %provincias;
-    background-image: linear-gradient(nth($colors,17), nth($colors,6));
+    background-image: linear-gradient(nth($colors,17), nth($colors,1));
 }
 
 #chaco {
     @extend %provincias;
-    background-image: linear-gradient(nth($colors,3), nth($colors,21));
+    background-image: linear-gradient(nth($colors,3), nth($colors,1));
 }
 
 #formosa {
     @extend %provincias;
-    background-image: linear-gradient(nth($colors,15), nth($colors,16));
+    background-image: linear-gradient(nth($colors,15), nth($colors,1));
 }
 
 /*@medias LITORAL*/
